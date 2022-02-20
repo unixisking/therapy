@@ -1,11 +1,15 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and TailwindCSS",
+  "description": "",
   "version": "0.3.0",
-  "author": "Kostas Vrouvas <hello@kosvrouvas.com>",
+  "author": "BRAHIMI Sid Ahmed <sidahmed@try2promote.agency>",
   "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.5",
+    "@hookform/resolvers": "^2.8.8",
     "autoprefixer": "^10.4.2",
+    "clsx": "^1.1.1",
     "gatsby": "^4.5.3",
     "gatsby-plugin-google-analytics": "^4.0.0",
     "gatsby-plugin-image": "^2.5.2",
@@ -21,7 +25,10 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.27.1",
+    "swiper": "^8.0.6",
+    "zod": "^3.11.6"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
