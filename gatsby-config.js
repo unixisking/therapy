@@ -5,7 +5,7 @@ module.exports = {
     author: `@kosvrouvas`,
   },
   flags: {
-    THE_FLAG: false
+    THE_FLAG: false,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-plugin-image`,
@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -66,16 +66,25 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
-      }
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: false,
-        develop: false,
+        printRejected: true, // Print removed selectors and processed file names
         tailwind: true,
+        // develop: true, // Enable while using `gatsby develop`
+        // whitelistPatternsChildren: [/swiper/],
+        ignore: ["swiper/"],
+        // tailwind: true, // Enable tailwindcss support
+        // whitelist: ['whitelist'],
+        // whitelistPatterns: [/^swiper-/], // Don't remove this selector
+        // ignore: ["swiper/css"], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
-    }
+    },
+    "gatsby-plugin-svgr",
+    `gatsby-plugin-styled-components`,
   ],
 }
