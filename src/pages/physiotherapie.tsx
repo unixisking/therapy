@@ -75,6 +75,7 @@ const IndexPage = () => (
     />
     <ServiceSpec title="Techniques de physiothérapie" data={spec} />
     <Section
+      isImageRight
       headline="À qui est destinée la physiothérapie ?"
       description="La physiothérapie est destinée à tous ceux qui, à cause de la douleur, ne parviennent pas à accomplir leurs fonctions journalières habituelles, à effectuer des mouvements ou à pratiquer des exercices sportives ou tout autre type d'activité.<br/>
 	  La physiothérapie est particulièrement efficace pour les personnes qui souhaitent augmenter leur capacité fonctionnelle et qui semblent déterminées à collaborer avec notre physiothérapeute pour y parvenir.<br/>
@@ -83,7 +84,7 @@ const IndexPage = () => (
 	  "
       image={
         <StaticImage
-          src="../assets/images/services/massage/target-audience.png"
+          src="../assets/images/services/physiotherapie/physio-audience.png"
           placeholder="blurred"
           alt="Massage"
         />

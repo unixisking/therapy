@@ -16,34 +16,31 @@ import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri"
 import Logo from "../assets/images/logo.png"
 import { Link as GatsbyLink } from "gatsby"
 import Button from "./Button"
+import { StaticImage } from "gatsby-plugin-image"
 
 const solutions = [
   {
-    name: "MERCURIUS BRB-seq kit",
-    description: "Brb-seq kit (96 samples)",
-    href: "/mercurius-brb-seq-kit",
+    name: "Massage",
+    description:
+      "Si vous cherchez à améliorer votre santé physique et psychologique.",
+    href: "/massage",
     icon: RiNumber1,
   },
   {
-    name: "MERCURIUS Blood BRB-seq kit",
-    description: "Blood brb-seq kit (96 samples)",
-    href: "/mercurius-blood-brb-seq-kit",
+    name: "Physiothérapie",
+    description:
+      "Si vous souhaitez vous sentir mieux niveau santé, plus fort et plus actif, nous sommes là pour s'occuper de vous.",
+    href: "/physiotherapie",
     icon: RiNumber2,
-  },
-  {
-    name: "MERCURIUS   BRB-seq service",
-    description: "BRB-SEQ TRANSCRIPTOMICS SERVICE",
-    href: "/mercurius-brb-seq-service",
-    icon: RiNumber3,
   },
 ]
 const callsToAction = [
   {
     name: "Email us",
-    href: "mailto:info@alitheagenomics.com",
+    href: "mailto:contact@super-masseur.com",
     icon: MailIcon,
   },
-  { name: "+41 788 30 31 39", href: "tel:+41788303139", icon: PhoneIcon },
+  { name: "0711 – 99 76 37 00", href: "tel:123", icon: PhoneIcon },
 ]
 const resources = [
   {
@@ -75,6 +72,10 @@ const resources = [
   },
 ]
 
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(" ")
+}
+
 export default function Navigation() {
   // fixed z-20  w-screen bg-white drop-shadow-sm py-2
   return (
@@ -91,20 +92,85 @@ export default function Navigation() {
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
-          <nav className="hidden md:flex space-x-10">
+          <Popover.Group as="nav" className="hidden md:flex space-x-10">
             <GatsbyLink
               to="/"
               className="text-base text-white hover:font-medium"
             >
               Acceuil
             </GatsbyLink>
+            <Popover className="relative">
+              {({ open }) => (
+                <>
+                  <Popover.Button
+                    className={classNames(
+                      "text-white group te rounded-md inline-flex items-center text-base hover:text-blueish focus:outline-none"
+                    )}
+                  >
+                    <span>Services</span>
+                    <ChevronDownIcon
+                      className={classNames(
+                        "text-white ml-2 h-5 w-5 group-hover:text-blueish"
+                      )}
+                      aria-hidden="true"
+                    />
+                  </Popover.Button>
 
-            <GatsbyLink
-              to="/services"
-              className="text-base text-white hover:font-medium"
-            >
-              Services
-            </GatsbyLink>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-200"
+                    enterFrom="opacity-0 translate-y-1"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in duration-150"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 translate-y-1"
+                  >
+                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                          {solutions.map(item => (
+                            <GatsbyLink
+                              key={item.name}
+                              to={item.href}
+                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                            >
+                              <item.icon
+                                className="mt-2 flex-shrink-0 h-6 w-6 text-blueish"
+                                aria-hidden="true"
+                              />
+                              <div className="ml-4">
+                                <p className="text-base text-gray-900">
+                                  {item.name}
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </GatsbyLink>
+                          ))}
+                        </div>
+                        <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                          {callsToAction.map(item => (
+                            <div key={item.name} className="flow-root">
+                              <a
+                                href={item.href}
+                                className="-m-3 p-3 flex items-center rounded-md text-base text-gray-900 hover:bg-gray-100"
+                              >
+                                <item.icon
+                                  className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                  aria-hidden="true"
+                                />
+                                <span className="ml-3">{item.name}</span>
+                              </a>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </Popover.Panel>
+                  </Transition>
+                </>
+              )}
+            </Popover>
 
             <GatsbyLink
               to="/a-propos"
@@ -118,7 +184,7 @@ export default function Navigation() {
             >
               Contactez-nous
             </GatsbyLink>
-          </nav>
+          </Popover.Group>
           {/*}
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <GatsbyLink
@@ -153,7 +219,13 @@ export default function Navigation() {
                     to="/"
                     className="text-2xl lg:text-3xl text-primary"
                   >
-                    Executive physiotherapy
+                    {/* Executive physiotherapy */}
+                    <StaticImage
+                      src="../assets/images/logo.png"
+                      alt="logo"
+                      placeholder="blurred"
+                      className="w-48 -ml-4 h-auto"
+                    />
                   </GatsbyLink>
                 </div>
                 <div className="-mr-2">

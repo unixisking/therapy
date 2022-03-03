@@ -25,7 +25,7 @@ export default function Section(props: ISection) {
           )}
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
             <div className="hidden lg:block">{props.image}</div>
-            <div className="pt-24 mx-auto space-y-8">
+            <div className="mx-auto space-y-8">
               {props.title && (
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
                   {props.title}
@@ -62,7 +62,7 @@ export default function Section(props: ISection) {
             </h2>
           )}
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
-            <div className="pt-24 mx-auto space-y-8">
+            <div className="mx-auto space-y-8">
               <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
                 {props.title}
               </h2>

@@ -3,6 +3,7 @@ import { Link as GatsbyLink } from "gatsby"
 import { withHoverEffect } from "./withStyles"
 
 import Logo from "../assets/images/logo.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = {
@@ -29,8 +30,8 @@ const navigation = {
     { name: "Faq", href: "/faq" },
   ],
   services: [
-    { name: "Massage", href: "/services" },
-    { name: "Physiothérapie", href: "/services" },
+    { name: "Massage", href: "/massage" },
+    { name: "Physiothérapie", href: "/physiotherapie" },
     { name: "Traitement De La Douleur", href: "/services" },
     { name: "Rééducation Sportive ", href: "/services" },
     { name: "Rééducation Pré-chirurgicale ", href: "/services" },
@@ -98,9 +99,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <h2 className="text-3xl lg:text-4xl text-primary text-left">
+            {/* <h2 className="text-3xl lg:text-4xl text-primary text-left">
               Executive physiotherapy
-            </h2>
+            </h2> */}
+            <StaticImage
+              src="../assets/images/logo.png"
+              alt="logo"
+              placeholder="blurred"
+              className="w-72 -mt-12 -ml-6 h-auto"
+            />
             <p className="text-grey text-base">
               Notre but est de contribuer au bien-être de nos patients.
               Rapidité, efficacité et prix abordable sont les maîtres-mots.

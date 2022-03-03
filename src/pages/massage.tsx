@@ -7,7 +7,6 @@ import linesImg from "../assets/images/lines.png"
 
 import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
-import ContactSection from "../components/ContactSection"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
@@ -43,7 +42,12 @@ const spec = [
 const IndexPage = () => (
   <div className="relative">
     {/* <SEO title="Home" /> */}
-    <div className="relative h-screen">
+    <div
+      style={{
+        background: `url(${HeaderImg}) no-repeat center center / cover`,
+      }}
+      className="relative h-75v lg:h-screen"
+    >
       <Navigation />
       <StaticImage
         layout="fullWidth"

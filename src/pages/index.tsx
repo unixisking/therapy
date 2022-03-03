@@ -6,7 +6,7 @@ import WhyUs from "../components/WhyUs"
 import Button from "../components/Button"
 // import Layout from "../components/layout"
 
-import HeaderImg from "../assets/images/homepage-header-img.png"
+import HeaderImg from "../assets/images/homepage-bg.png"
 import OneImg from "../assets/images/one.png"
 import TwoImg from "../assets/images/two.png"
 import ThreeImg from "../assets/images/three.png"
@@ -24,15 +24,20 @@ import Footer from "../components/Footer"
 const IndexPage = () => (
   <div className="relative">
     {/* <SEO title="Home" /> */}
-    <div className="relative h-screen">
+    <div
+      className="relative h-screen"
+      style={{
+        background: `url(${HeaderImg}) no-repeat center center / cover`,
+      }}
+    >
       <Navigation />
-      <img
+      {/* <img
         placeholder="none"
         id="bg-image"
         src={HeaderImg}
         alt=""
         className="block absolute top-0 h-screen right-0 w-screen object-cover blur-sm"
-      />
+      /> */}
       <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
           Physiothérapie à Prilly
