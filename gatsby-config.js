@@ -3,6 +3,7 @@ module.exports = {
     title: `Super Masseur`,
     description: ``,
     author: `@try2promote`,
+    siteUrl: "https://super-masseur.ch",
   },
   flags: {
     THE_FLAG: false,
