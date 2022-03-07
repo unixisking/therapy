@@ -42,6 +42,7 @@ export default function ScheduleSecton() {
 }
 
 const ScheduleForm = () => {
+  const url = typeof window !== "undefined" ? window.location.pathname : null
   return (
     <form
       style={{ boxShadow: "0px 10px 40px rgba(9, 34, 124, 0.4)" }}
@@ -98,28 +99,30 @@ const ScheduleForm = () => {
           />
         </div>
       </div>
-      <div>
-        <label
-          htmlFor="service"
-          className="block text-sm font-medium text-gray-700"
-        >
-          Choose a service or a treatment
-        </label>
-        <select
-          id="service"
-          name="service"
-          className="p-4 border mt-1 block w-full pl-3 pr-10 text-base border-gray-300 focus:outline-none focus:ring-[#556AFE] focus:border-[#556AFE] sm:text-sm rounded-md"
-          defaultValue="Massothérapie"
-        >
-          <option defaultChecked>Massothérapie</option>
-          <option>Physiothérapie</option>
-          <option>Traitement De La Douleur</option>
-          <option>Rééducation Sportive </option>
-          <option>Rééducation Pré-chirurgicale </option>
-          <option>Rééducation Post-chirurgicale</option>
-          <option>Rééducation cardiaque</option>
-        </select>
-      </div>
+      {url === "/" ? (
+        <div>
+          <label
+            htmlFor="service"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Choose a service or a treatment
+          </label>
+          <select
+            id="service"
+            name="service"
+            className="p-4 border mt-1 block w-full pl-3 pr-10 text-base border-gray-300 focus:outline-none focus:ring-[#556AFE] focus:border-[#556AFE] sm:text-sm rounded-md"
+            defaultValue="Massothérapie"
+          >
+            <option defaultChecked>Massothérapie</option>
+            <option>Physiothérapie</option>
+            <option>Traitement de Douleurs</option>
+            <option>Rééducation Sportive</option>
+            <option>Réhabilitation Préopératoire</option>
+            <option>Réhabilitation Post opératoire</option>
+            <option>Rééducation Cardiaque</option>
+          </select>
+        </div>
+      ) : null}
       <div>
         <label
           htmlFor="session_date"
