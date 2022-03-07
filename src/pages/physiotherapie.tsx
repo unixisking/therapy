@@ -1,7 +1,7 @@
 import React from "react"
 import Navigation from "../components/Navigation"
 
-import HeaderImg from "../assets/images/homepage-header-img.png"
+import HeaderImg from "../assets/images/services/physiotherapie/bg.png"
 import linesImg from "../assets/images/lines.png"
 
 import SecondaryCta from "../components/SecondaryCta"
@@ -54,7 +54,7 @@ const IndexPage = () => (
       </div>
       <img
         src={linesImg}
-        className="absolute hidden lg:block lg:-bottom-96 w-full"
+        className="absolute hidden lg:block lg:-bottom-72 w-full"
       />
     </div>
     <Section

@@ -33,8 +33,7 @@ export default function ContactSection() {
         <div className="flex items-center">
           <ClockIcon className="w-8 h-8 mr-4 text-[#FF7F22]" />
           <p className="text-base text-grey">
-            Monday & Tuesday: 8 am - 12 pm, Wednesday: 8 am - 2 pm, Thursday: 1
-            pm - 6 pm, Friday: 8 am - 2 pm
+            De lundi au vendredi, de 7h à 18h
           </p>
         </div>
       </div>

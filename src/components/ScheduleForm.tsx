@@ -2,7 +2,10 @@ import React from "react"
 
 export default function ScheduleSecton() {
   return (
-    <div className="relative mt-12 lg:mt-24 px-4 sm:px-6 lg:max-w-7xl grid grid-col-1 lg:grid-cols-2 gap-24 mx-auto">
+    <div
+      id="reservez"
+      className="relative mt-12 lg:mt-24 px-4 sm:px-6 lg:max-w-7xl grid grid-col-1 lg:grid-cols-2 gap-24 mx-auto"
+    >
       <div className="space-y-12 lg:pt-24">
         <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
           Réservez Une Séance Maintenant
@@ -17,20 +20,19 @@ export default function ScheduleSecton() {
         </div>
         <div className="space-y-4">
           <h3 className="text-2xl lg:text-3xl font-extrabold text-primary">
-            Veuillez noter que
+            Nous vous rappelons que
           </h3>
           <p className="text-base text-grey">
-            En raison du nombre limité de participants, il est nécessaire de
-            s'inscrire à l'avance, même pour le cours d'essai.
+            Votre physiothérapie est remboursée par les assurances maladie.
           </p>
         </div>
         <div className="space-y-4">
           <h3 className="text-2xl lg:text-3xl font-extrabold text-primary">
-            Veuillez apporter avec vous
+            Prière de vous munir de
           </h3>
           <p className="text-base text-grey">
-            Une couverture ou une serviette et des vêtements chauds et
-            confortables (chaussettes en laine) .
+            Une serviette et des vêtements confortables qui vous permettront de
+            vous sentir à l'aise lors de vos séances de physiothérapie.
           </p>
         </div>
       </div>

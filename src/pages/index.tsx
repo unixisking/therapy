@@ -48,7 +48,7 @@ const IndexPage = () => (
           plus rapidement possible.
         </p>
         <Link
-          to="/"
+          to="/services"
           className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-6 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
           Découvrez Maintenant
@@ -92,47 +92,49 @@ const IndexPage = () => (
           Comment Prendre Rendez-vous Avec Nous
         </h2>
         <p className="mt-4 text-base sm:text-lg text-grey">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Notre cabinet de physiothérapie est à votre écoute. Nous mettons tout
+          en œuvre pour que les patients que nous avons le plaisir de recevoir
+          reçoivent un traitement de physiothérapie de qualité. Vous pouvez
+          facilement prendre rendez-vous avec notre physiothérapeute.
         </p>
       </div>
       <div className="relative mt-8 lg:mt-16 grid gap-12 lg:gap-48 grid-cols-2">
         <img
           src={HealthImg}
-          className="w-24 md:w-32 lg:w-48 absolute top-12 lg:top-0 bottom-0 left-0 right-0 m-auto"
+          className="w-12 lg:w-24 absolute top-12 lg:top-0 bottom-0 left-0 right-0 m-auto"
         />
         <div className="flex flex-col lg:flex-row items-center">
           <img src={OneImg} alt="" className="w-24 mr-4" />
           <p className="text-base text-grey">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            En utilisant notre formulaire de service et en fournissant les
+            informations nécessaires
           </p>
         </div>
         <div className="flex flex-col lg:flex-row items-center">
           <img src={TwoImg} alt="" className="w-24 mr-4" />
           <p className="text-base text-grey">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            En contactant notre cabinet directement via notre numéro de
+            téléphone
           </p>
         </div>
         <div className="flex flex-col lg:flex-row items-center">
           <img src={ThreeImg} alt="" className="w-24 mr-4" />
           <p className="text-base text-grey ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            En nous envoyant un e-mail indiquant le type de service ou
+            traitement qu'il vous faut
           </p>
         </div>
         <div className="flex flex-col lg:flex-row items-center">
           <img src={FourImg} alt="" className="w-24 mr-4" />
           <p className="text-base text-grey">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            En vous rendant directement dans notre cabinet de physiothérapie à
+            Prilly
           </p>
         </div>
       </div>
     </div>
     <ScheduleSecton />
-    <div className="mt-24 lg:mt-32 max-w-xl px-4 sm:px-6 lg:max-w-7xl mx-auto grid grid-col-1 lg:grid-cols-3 gap-12">
+    {/* <div className="mt-24 lg:mt-32 max-w-xl px-4 sm:px-6 lg:max-w-7xl mx-auto grid grid-col-1 lg:grid-cols-3 gap-12">
       <div className="lg:col-span-2 space-y-4 lg:max-w-2xl">
         <h2 className="text-3xl font-extrabold text-primary">
           Nous assurons un suivi professionnel{" "}
@@ -169,7 +171,7 @@ const IndexPage = () => (
           Read more <ArrowRightIcon className="w-3 h-3 ml-1 text-primary" />
         </Link>
       </div>
-    </div>
+    </div> */}
     <SecondaryCta />
     {/* <img
       className="w-screen"

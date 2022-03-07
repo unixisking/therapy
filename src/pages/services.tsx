@@ -43,7 +43,7 @@ const IndexPage = () => (
           aspect relatif à la santé et au bien-être en général.
         </p>
         <Link
-          to="/"
+          to="/#reservez"
           className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-6 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
           Prenez un rendez-vous
@@ -57,17 +57,17 @@ const IndexPage = () => (
     <Section
       title="Physiothérapie"
       description="Développez et redonnez de la force à votre corps afin que vous soyez en parfaite condition physique et que    vous puissiez mener une vie active et saine. Le    physiothérapeute peut traiter les patients en utilisant une variété de techniques, notamment les suivantes : 
-"
+      "
       points={[
-        "Massage/mobilisation des tissus et des articulations.",
-        "Mobilisation des jointures.",
-        "Mobilisation de la colonne vertébrale.",
+        "Thérapie manuelle.",
+        "Trigger point.",
+        "L'électrothérapie.",
         "Des étirements sous toutes leurs formes, ... Et bien d'autres techniques.",
       ]}
       to="/services/physiotherapie"
       image={
         <StaticImage
-          src="../assets/images/who-are-we.png"
+          src="../assets/images/service-images/physio.png"
           placeholder="blurred"
           alt="Physiothérapie"
         />
@@ -75,27 +75,27 @@ const IndexPage = () => (
     />
     <Section
       isImageRight
-      title="Traitement De La Douleur"
+      title="Traitement de Douleurs"
       description="Reprenez pleinement possession de votre corps, retrouver votre souplesse, mobilité et récupérer votre autonomie, tout en apaisant vos douleurs avec l'aide de notre physiothérapeute. Notre physiothérapeute peut intervenir pour traiter diverses douleurs physiques que vous éprouvez, y compris :"
       points={[
-        "Douleurs de dos.",
-        "Douleur au cou.",
-        "Douleur de la main, du poignet et du coude.",
-        "Douleur à la cheville et au pied.",
-        "Douleurs de genou et de hanche ainsi que de nombreux autres maux.",
+        "Douleur Bas du Dos/ Haut du Dos",
+        "Douleur epaule et cou",
+        "Douleur poignet, coude et main",
+        "Douleur pied et cheville",
+        "Douleur Genou et Hanche ainsi que de nombreux autres maux.",
       ]}
       to="/services/traitement-de-la-douleur"
       image={
         <StaticImage
           src="../assets/images/service-images/traitement-douleur.png"
           placeholder="blurred"
-          alt="Traitement De La Douleur"
+          alt="Traitement de Douleurs"
         />
       }
     />
     <Section
-      title="Massage"
-      description="Éliminez toutes les tensions, le stress et les courbatures avec nos divers massages afin de favoriser le processus de guérison, et d’améliorer le   bien-être des patients. Cela inclut :"
+      title="Massothérapie"
+      description="Éliminez toutes les tensions, le stress et les courbatures avec nos divers massages afin de favoriser le processus de guérison, et d’améliorer le  bien-être des patients. Cela inclut :"
       points={[
         "Massage relaxant pour apaiser et détendre le corps et l'esprit.",
         "Massage sportif pour décontracter et assouplir les muscles des sportifs et accroître leurs capacités.",
@@ -106,15 +106,14 @@ const IndexPage = () => (
         <StaticImage
           src="../assets/images/service-images/massage.png"
           placeholder="blurred"
-          alt="Massage"
+          alt="Massothérapie"
         />
       }
     />
     <Section
       isImageRight
-      title="Rééducation Sportive "
-      description="Les blessures sportives peuvent toucher tout le monde. Peu importe la nature de la blessure, n'attendez pas pour consulter. Le thérapeute peut vous proposer comme traitement la physiothérapie et la rééducation. Le but ultime est de :
-	  "
+      title="Rééducation Sportive"
+      description="Les blessures sportives peuvent toucher tout le monde. Peu importe la nature de la blessure, n'attendez pas pour consulter. Le thérapeute peut vous proposer comme traitement la physiothérapie et la rééducation. Le but ultime est de :"
       points={[
         "Restaurer les fonctions musculaires",
         "Atténuer au maximum la douleur",
@@ -127,13 +126,13 @@ const IndexPage = () => (
         <StaticImage
           src="../assets/images/service-images/reeducation-sportive.png"
           placeholder="blurred"
-          alt="Rééducation Sportive "
+          alt="Rééducation Sportive"
         />
       }
     />
     <Section
-      title="Rééducation Pré-chirurgicale"
-      description="Si vous allez bientôt vous faire opérer, la rééducation pré-chirurgicale vous permettra à la fois de préparer votre corps et de raccourcir la durée de votre convalescence. Votre programme de rééducation pré-chirurgicale sera principalement centré sur les points ci-après :"
+      title="Réhabilitation Préopératoire"
+      description="Si vous allez bientôt vous faire opérer, la réhabilitaion préopératoire vous permettra à la fois de préparer votre corps et de raccourcir la durée de votre convalescence. Votre programme sera principalement centré sur les points ci-après :"
       points={[
         "Le conditionnement physique.",
         "Une série de mouvements.",
@@ -146,16 +145,16 @@ const IndexPage = () => (
         <StaticImage
           src="../assets/images/service-images/reeducation-prechirurgicale.png"
           placeholder="blurred"
-          alt="Rééducation Pré-chirurgicale "
+          alt="Réhabilitation Préopératoire"
         />
       }
     />
     <Section
       isImageRight
-      title="Rééducation Post-chirurgicale"
-      description="Vous souhaitez reprendre pied le plus rapidement possible après une intervention chirurgicale ? Avec l'aide de physiothérapeute, vous pourrez à nouveau vous adonner aux activités qui vous passionnent grâce à la rééducation post-chirurgicale ! 
-	  La rééducation post-chirurgicale accompagnée d'un physiothérapeute peut aider à : 
-	  "
+      title="Réhabilitation Post opératoire"
+      description="Vous souhaitez reprendre pied le plus rapidement possible après une intervention chirurgicale ? Avec l'aide de physiothérapeute, vous pourrez à nouveau vous adonner aux activités qui vous passionnent grâce à la réhabilitation post opératoire !<br/>
+      Cette dernière peut aider à : 
+      "
       points={[
         "Atténuer le plus possible vos douleurs.",
         "Accélérer le processus de récupération.",
@@ -166,13 +165,14 @@ const IndexPage = () => (
         <StaticImage
           src="../assets/images/service-images/reeducation-postchirurgicale.png"
           placeholder="blurred"
-          alt="Rééducation Post-chirurgicale"
+          alt="Réhabilitation Post opératoire"
         />
       }
     />
     <Section
-      title="Rééducation cardiaque"
-      description="La rééducation cardiaque peut apporter beaucoup de bienfaits aux personnes souffrant de maladies cardiaques et ainsi reprendre une vie normale, y compris :"
+      title="Rééducation Cardiaque"
+      description="La rééducation cardiaque 
+      peut apporter beaucoup de bienfaits aux personnes souffrant de maladies cardiaques et ainsi reprendre une vie normale, y compris :"
       points={[
         "Améliorer la santé de votre cœur et de votre organisme en cas d'infarctus.",
         "Apaiser les symptômes liés aux pathologies cardiovasculaires.",
@@ -185,7 +185,7 @@ const IndexPage = () => (
         <StaticImage
           src="../assets/images/service-images/reeducation-cardiaque.png"
           placeholder="blurred"
-          alt="Rééducation cardiaque"
+          alt="Rééducation Cardiaque"
         />
       }
     />

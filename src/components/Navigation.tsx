@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useRef, useState } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import {
   BookmarkAltIcon,
@@ -13,10 +13,9 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/solid"
 import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri"
 
-import Logo from "../assets/images/logo.png"
-import { Link as GatsbyLink } from "gatsby"
-import Button from "./Button"
+import { graphql, Link as GatsbyLink } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { useStaticQuery } from "gatsby"
 
 const solutions = [
   {
@@ -78,13 +77,20 @@ function classNames(...classes: string[]) {
 
 export default function Navigation() {
   // fixed z-20  w-screen bg-white drop-shadow-sm py-2
+  const homeFormUrls = ["/a-propos", "/services", "/contact"]
+  const url = typeof window !== "undefined" ? window.location.pathname : null
+
   return (
     <Popover className="absolute top-0 w-screen py-5 z-20">
       <div className="max-w-7xl px-4 sm:px-12">
         <div className="flex justify-between items-center md:justify-start md:space-x-48 mt-4 mx-4">
           <GatsbyLink to="/" className="text-2xl lg:text-3xl text-white">
-            Executive <br />
-            physiotherapy
+            <StaticImage
+              src="../assets/images/logo-white.png"
+              alt="logo"
+              placeholder="blurred"
+              className="w-56 -ml-4 h-auto"
+            />
           </GatsbyLink>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -99,78 +105,7 @@ export default function Navigation() {
             >
               Acceuil
             </GatsbyLink>
-            <Popover className="relative">
-              {({ open }) => (
-                <>
-                  <Popover.Button
-                    className={classNames(
-                      "text-white group te rounded-md inline-flex items-center text-base hover:text-blueish focus:outline-none"
-                    )}
-                  >
-                    <span>Services</span>
-                    <ChevronDownIcon
-                      className={classNames(
-                        "text-white ml-2 h-5 w-5 group-hover:text-blueish"
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button>
-
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                          {solutions.map(item => (
-                            <GatsbyLink
-                              key={item.name}
-                              to={item.href}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                            >
-                              <item.icon
-                                className="mt-2 flex-shrink-0 h-6 w-6 text-blueish"
-                                aria-hidden="true"
-                              />
-                              <div className="ml-4">
-                                <p className="text-base text-gray-900">
-                                  {item.name}
-                                </p>
-                                <p className="mt-1 text-sm text-gray-500">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </GatsbyLink>
-                          ))}
-                        </div>
-                        <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                          {callsToAction.map(item => (
-                            <div key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
-                                className="-m-3 p-3 flex items-center rounded-md text-base text-gray-900 hover:bg-gray-100"
-                              >
-                                <item.icon
-                                  className="flex-shrink-0 h-6 w-6 text-gray-400"
-                                  aria-hidden="true"
-                                />
-                                <span className="ml-3">{item.name}</span>
-                              </a>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </Popover.Panel>
-                  </Transition>
-                </>
-              )}
-            </Popover>
+            <FlyoutMenu title="Services" links={solutions} />
 
             <GatsbyLink
               to="/a-propos"
@@ -185,16 +120,20 @@ export default function Navigation() {
               Contactez-nous
             </GatsbyLink>
           </Popover.Group>
-          {/*}
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <GatsbyLink
-              to="/order"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-primary to-greenish rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline"
+              to={homeFormUrls.includes(url) ? "/#reservez" : "#reservez"}
+              style={{
+                background:
+                  "linear-gradient(91.76deg, rgba(98, 169, 255, 0.8) 0.15%, rgba(176, 208, 255, 0.8) 102.56%)",
+                boxShadow: "6px 6px 20px rgba(9, 34, 124, 0.25)",
+                borderRadius: "10px",
+              }}
+              className="ml-24 whitespace-nowrap inline-flex items-center justify-center px-12 py-4 border border-transparent shadow-sm text-base font-medium text-white rounded-lg drop-shadow-lg focus:outline-none outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
             >
-              Order now
+              <span></span>Reservez
             </GatsbyLink>
           </div>
-          */}
         </div>
       </div>
 
@@ -290,6 +229,75 @@ export default function Navigation() {
           </div>
         </Popover.Panel>
       </Transition>
+    </Popover>
+  )
+}
+
+const FlyoutMenu = ({ title, links }) => {
+  return (
+    <Popover className="relative">
+      {({ open }) => (
+        <>
+          <Popover.Button
+            className={classNames(
+              "text-white group te rounded-md inline-flex items-center text-base hover:text-blueish focus:outline-none"
+            )}
+          >
+            <span>{title}</span>
+            <ChevronDownIcon
+              className={classNames(
+                "text-white ml-2 h-5 w-5 group-hover:text-blueish"
+              )}
+              aria-hidden="true"
+            />
+          </Popover.Button>
+
+          <Transition
+            as={Fragment}
+            enter="transition ease-out duration-200"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-150"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+          >
+            <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+              <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                  {links.map(item => (
+                    <GatsbyLink
+                      key={item.name}
+                      to={item.href}
+                      className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                    >
+                      <item.icon
+                        className="mt-2 flex-shrink-0 h-6 w-6 text-blueish"
+                        aria-hidden="true"
+                      />
+                      <div className="ml-4">
+                        <p className="text-base text-gray-900">{item.name}</p>
+                        <p className="mt-1 text-sm text-gray-500">
+                          {item.description}
+                        </p>
+                      </div>
+                    </GatsbyLink>
+                  ))}
+                </div>
+                <div className="bg-gray-50 hover:bg-gray-100 space-y-6 sm:flex sm:space-y-0 sm:space-x-10">
+                  <div className="py-3 w-full">
+                    <GatsbyLink
+                      to="/services"
+                      className="ml-3 p-4 flex items-center rounded-md text-base text-gray-900"
+                    >
+                      <span className="ml-3">Consultez tous nos services</span>
+                    </GatsbyLink>
+                  </div>
+                </div>
+              </div>
+            </Popover.Panel>
+          </Transition>
+        </>
+      )}
     </Popover>
   )
 }

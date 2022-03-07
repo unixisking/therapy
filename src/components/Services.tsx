@@ -4,18 +4,20 @@ import SwiperCore, { FreeMode, Mousewheel } from "swiper"
 
 // import { ReactComponent as AthleteRehabSvg } from "../assets/images/services/athlete.svg"
 
-// import { ReactComponent as PreSvg } from "../assets/images/services/pre.svg"
-// import { ReactComponent as PostSvg } from "../assets/images/services/post.svg"
-// import { ReactComponent as PhysioSvg } from "../assets/images/services/physio.svg"
-// import { ReactComponent as MassageSvg } from "../assets/images/services/massage.svg"
-// import { ReactComponent as BackboneSvg } from "../assets/images/services/backbone.svg"
-import PreImg from "../assets/images/services/pre.png"
-import PostImg from "../assets/images/services/post.png"
-import PhysioImg from "../assets/images/services/physio.png"
-import MassageImg from "../assets/images/services/pre.png"
-import BackboneImg from "../assets/images/services/backbone.png"
+import { ReactComponent as PreSvg } from "../assets/icons/services/rehabilitation-preoperatoire.svg"
+import { ReactComponent as PostSvg } from "../assets/icons/services/rehabilitation-postoperatoire.svg"
+import { ReactComponent as PhysioSvg } from "../assets/icons/services/physio.svg"
+import { ReactComponent as MassageSvg } from "../assets/icons/services/massotherapie.svg"
+import { ReactComponent as BackboneSvg } from "../assets/icons/services/traitement-douleur.svg"
+
+// import { ReactComponent as PreImg } from "../assets/icons/services/rehabilitation-preoperatoire.svg"
+// import PostImg from "../assets/icons/services/rehabilitation-postoperatoire.svg"
+// import { ReactComponent as PhysioImg } from "../assets/icons/services/physio.svg"
+// import MassageImg from "../assets/icons/services/massotherapie.svg"
+// import BackboneImg from "../assets/icons/services/traitement-douleur.svg"
 
 import "swiper/css"
+import clsx from "clsx"
 
 SwiperCore.use([Mousewheel, FreeMode])
 
@@ -63,68 +65,23 @@ export default function Services() {
         }}
       >
         <SwiperSlide>
-          <Card
-            title="Physiotherapy"
-            image={
-              <img
-                src={PhysioImg}
-                className="h-16 w-16"
-                alt="Chinese Acupuncture"
-              />
-            }
-          />
+          <Card title="Physiotherapy" Image={PhysioSvg} />
         </SwiperSlide>
         <SwiperSlide>
           <Card
             title="Traitement 
 			de douleur"
-            image={
-              <img
-                src={BackboneImg}
-                className="h-16 w-16 text-white"
-                alt="Massage Therapy"
-              />
-            }
+            Image={BackboneSvg}
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Card
-            title="Massage
-			Therapy"
-            image={
-              <img
-                src={MassageImg}
-                className="h-16 w-16 text-white"
-                alt="Athlete Rehabilation"
-              />
-            }
-          />
+          <Card title="Massothérapie" Image={MassageSvg} />
         </SwiperSlide>
         <SwiperSlide>
-          <Card
-            title="Rééducation 
-			Pré-chirurgicale "
-            image={
-              <img
-                src={PreImg}
-                className="h-16 w-16 text-white"
-                alt="Deep Stretching"
-              />
-            }
-          />
+          <Card title="Réhabilitation préopératoire" Image={PreSvg} />
         </SwiperSlide>
         <SwiperSlide>
-          <Card
-            title="Rééducation 
-			Post-chirurgicale"
-            image={
-              <img
-                src={PostImg}
-                className="h-16 w-16 text-white"
-                alt="Foot Orthotics"
-              />
-            }
-          />
+          <Card title="Réhabilitation postopératoire" Image={PostSvg} />
         </SwiperSlide>
       </Swiper>
     </div>
@@ -133,31 +90,43 @@ export default function Services() {
 
 interface ICard {
   title: string
-  image: ReactNode
+  Image: any
   content?: string
 }
 
-const Card = ({ title, image, content }: ICard) => (
-  <div
-    style={{
-      background: "linear-gradient(132.39deg, #F4F4F4 2.64%, #DDE6F1 98.48%)",
-    }}
-    className="text-white p-2 h-56 lg:h-64 lg:py-16 lg:px-8 rounded-3xl"
-  >
-    <div className="flex flex-col items-center">
-      <div
-        style={{
-          background:
-            "linear-gradient(128.77deg, rgba(102, 163, 255, 0.6) -7.21%, rgba(0, 116, 255, 0.6) 106.38%)",
-        }}
-        className="p-3 rounded-lg"
-      >
-        {image}
+const blue =
+  "linear-gradient(128.77deg, rgba(102, 163, 255, 0.6) -7.21%, rgba(0, 116, 255, 0.6) 106.38%)"
+const grey = "linear-gradient(132.39deg, #F4F4F4 2.64%, #DDE6F1 98.48%)"
+
+const Card = ({ title, content, Image }: ICard) => {
+  const [isHovered, setIsHovered] = React.useState(false)
+  return (
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={isHovered ? { background: blue } : { background: grey }}
+      className="text-white p-2 h-56 lg:h-64 lg:py-16 lg:px-8 rounded-3xl cursor-pointer transition duration-1000 ease-in-out"
+    >
+      <div className="flex flex-col items-center">
+        <div
+          style={isHovered ? { background: grey } : { background: blue }}
+          className="p-3 rounded-lg"
+        >
+          <Image
+            className={clsx("h-16 w-16", {
+              "text-primary": isHovered,
+              "text-white": !isHovered,
+            })}
+            // alt="Chinese Acupuncture"
+          />
+
+          {/* {image} */}
+        </div>
+        <h3 className="text-primary mt-4 font-bold text-lg lg:text-xl">
+          {title}
+        </h3>
       </div>
-      <h3 className="text-primary mt-4 font-bold text-lg lg:text-xl">
-        {title}
-      </h3>
+      {content && <p className="mt-2 text-[#0C6784]">{content}</p>}
     </div>
-    {content && <p className="mt-2 text-[#0C6784]">{content}</p>}
-  </div>
-)
+  )
+}

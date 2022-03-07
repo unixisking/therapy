@@ -21,8 +21,7 @@ function SecondaryCta() {
           </a>
         </h1>
         <p className="text-base text-white">
-          Lundi & mardi : 8h - 12h, mercredi : 8h - 14h, jeudi : 13h - 18h,
-          vendredi : 8h - 14h
+          De lundi au vendredi, de 7h à 18h
           <br />
           <br />
           En dehors de ces horaires, merci de parler sur l'AB ou d'Envoyez-nous

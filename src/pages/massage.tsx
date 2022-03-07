@@ -59,7 +59,7 @@ const IndexPage = () => (
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
-          Massage
+          Massothérapie
         </h1>
       </div>
       <img
@@ -67,22 +67,24 @@ const IndexPage = () => (
         className="absolute hidden lg:block lg:-bottom-64 w-full"
       />
     </div>
+    <div className="-mt-12 lg:-mt-24" />
     <Section
       isImageRight
-      title="Massage"
-      description="Vos tissus mous et vos muscles sont très sollicités quotidiennement. Par conséquent, il est primordial de les maintenir en bonne santé et de veiller à leur bon fonctionnement. C'est pourquoi le massage est particulièrement bénéfique.
-Le massage, ou massothérapie, consiste à entreprendre une série de techniques manuelles profondes sur la peau et les muscles dans le but de favoriser le bien-être des patients et d'éliminer les tensions pouvant survenir après un effort physique ou dans la vie de tous les jours.
+      title="Massage Thérapeutique"
+      description="
+      Vos tissus mous et vos muscles sont très sollicités quotidiennement. Par conséquent, il est primordial de les maintenir en bonne santé et de veiller à leur bon fonctionnement. C'est pourquoi le massage est particulièrement bénéfique.<br/>
+Le massage, ou massothérapie, consiste à entreprendre une série de techniques manuelles profondes sur la peau et les muscles dans le but de favoriser le bien-être des patients et d'éliminer les tensions pouvant survenir après un effort physique ou dans la vie de tous les jours.<br/>
 Notre physiothérapeute vous propose différents types de massages, parmi lesquels figurent le massage relaxant, le massage sportif et le massage médical.
 "
       image={
         <StaticImage
           src="../assets/images/services/massage/massage.png"
           placeholder="blurred"
-          alt="Massage"
+          alt="Massage Thérapeutique"
         />
       }
     />
-    <ServiceSpec title="Techniques de Massage" data={spec} />
+    <ServiceSpec title="Techniques de Massothérapie" data={spec} />
     <Section
       headline="À Qui S'adressent Les Services De Massage?"
       description="Les massages sont destinés à tout le monde, étant donné que c'est une solution très efficace pour soulager les muscles endoloris, contractés ou crispés.
