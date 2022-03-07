@@ -14,8 +14,8 @@ export default function ScheduleSecton() {
           <h3 className="text-2xl lg:text-3xl font-extrabold text-primary mb-4">
             Disponible par téléphone
           </h3>
-          <a href="tel:6565" className="text-base text-grey font-bold">
-            0711 – 99 76 37 00
+          <a href="tel:+41792322074" className="text-base text-grey font-bold">
+            +41 79 232 20 74
           </a>
         </div>
         <div className="space-y-4">
@@ -77,7 +77,7 @@ const ScheduleForm = () => {
             name="phone"
             id="phone"
             className="p-4 border shadow-sm focus:ring-[#556AFE] focus:border-[#556AFE] block w-full sm:text-sm text-[#] border-gray-300 rounded-md"
-            placeholder="0711 – 99 76 37 00"
+            placeholder="+41 79 232 20 74"
           />
         </div>
       </div>
@@ -109,9 +109,9 @@ const ScheduleForm = () => {
           id="service"
           name="service"
           className="p-4 border mt-1 block w-full pl-3 pr-10 text-base border-gray-300 focus:outline-none focus:ring-[#556AFE] focus:border-[#556AFE] sm:text-sm rounded-md"
-          defaultValue="Massage"
+          defaultValue="Massothérapie"
         >
-          <option defaultChecked>Massage</option>
+          <option defaultChecked>Massothérapie</option>
           <option>Physiothérapie</option>
           <option>Traitement De La Douleur</option>
           <option>Rééducation Sportive </option>

@@ -2,7 +2,6 @@ import React from "react"
 import { Link as GatsbyLink } from "gatsby"
 import { withHoverEffect } from "./withStyles"
 
-import Logo from "../assets/images/logo.png"
 import { StaticImage } from "gatsby-plugin-image"
 
 /* This example requires Tailwind CSS v2.0+ */
@@ -30,7 +29,7 @@ const navigation = {
     { name: "Faq", href: "/faq" },
   ],
   services: [
-    { name: "Massage", href: "/massage" },
+    { name: "Massothérapie", href: "/massotherapie" },
     { name: "Physiothérapie", href: "/physiotherapie" },
     { name: "Traitement De La Douleur", href: "/services" },
     { name: "Rééducation Sportive ", href: "/services" },
@@ -40,7 +39,7 @@ const navigation = {
   ],
   legal: [
     { name: "Chemin du viaduc 12, 1008 Prilly , Swisse", href: "/" },
-    { name: "+41 788 30 31 39", href: "tel:" },
+    { name: "+41 788 30 31 39", href: "tel:+41792322074" },
     {
       name: "contact@physiontherapy.com",
       href: "mailto:info@physiontherapy.com",
@@ -115,7 +114,7 @@ export default function Footer() {
               les dernières techniques et approches afin d'améliorer les
               performances des patients.
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               {navigation.social.map(item => (
                 <a
                   key={item.name}
@@ -126,7 +125,7 @@ export default function Footer() {
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">

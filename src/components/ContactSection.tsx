@@ -17,11 +17,11 @@ export default function ContactSection() {
           </p>
         </div>
         <a
-          href="tel:6565"
+          href="tel:+41792322074"
           className="flex items-center text-base text-grey font-bold"
         >
           <PhoneIcon className="w-8 h-8 mr-4 text-[#FF7F22]" />
-          <p className="text-base text-grey">0711 – 99 76 37 00</p>
+          <p className="text-base text-grey">+41 79 232 20 74</p>
         </a>
         <a
           href="mailto:contact@super-masseur.ch"
@@ -79,7 +79,7 @@ const ContactForm = () => {
               name="phone"
               id="phone"
               className="p-4 border shadow-sm focus:ring-[#556AFE] focus:border-[#556AFE] block w-full sm:text-sm text-[#] border-gray-300 rounded-md"
-              placeholder="0711 – 99 76 37 00"
+              placeholder="+41 79 232 20 74"
             />
           </div>
         </div>

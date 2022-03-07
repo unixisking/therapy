@@ -16,8 +16,8 @@ function SecondaryCta() {
           Disponible Par Telephone
           <br />
           <br />{" "}
-          <a href="tel:" className="text-white">
-            0711 – 99 76 37 00
+          <a href="tel:+41792322074" className="text-white">
+            +41 79 232 20 74
           </a>
         </h1>
         <p className="text-base text-white">

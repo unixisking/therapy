@@ -84,7 +84,8 @@ const IndexPage = () => (
           passionné par son travail.
           <br />
           Envie d'en connaître davantage sur nos prestations ? N'hésitez pas à
-          nous joindre par téléphone à <a href="tel:">XXX</a> ou via notre
+          nous joindre par téléphone à{" "}
+          <a href="tel:+41792322074">+41 79 232 20 74</a> ou via notre
           formulaire en ligne.
         </p>
       </div>

@@ -19,10 +19,10 @@ import { useStaticQuery } from "gatsby"
 
 const solutions = [
   {
-    name: "Massage",
+    name: "Massothérapie",
     description:
       "Si vous cherchez à améliorer votre santé physique et psychologique.",
-    href: "/massage",
+    href: "/massotherapie",
     icon: RiNumber1,
   },
   {
@@ -39,7 +39,7 @@ const callsToAction = [
     href: "mailto:contact@super-masseur.com",
     icon: MailIcon,
   },
-  { name: "0711 – 99 76 37 00", href: "tel:123", icon: PhoneIcon },
+  { name: "+41 79 232 20 74", href: "tel:+41792322074", icon: PhoneIcon },
 ]
 const resources = [
   {
