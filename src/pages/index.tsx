@@ -20,9 +20,15 @@ import ScheduleSecton from "../components/ScheduleForm"
 import { ArrowRightIcon } from "@heroicons/react/outline"
 import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <div className="relative">
+    <SEO
+      title="VOTRE CABINET DE PHYSIOTHÉRAPIE À PRILLY"
+      description="Besoin d'une physiothérapie ? Faites appel à notre expert, physiothérapeute
+      et kinésithérapeute, dès aujourd'hui. Expertise et professionnalisme assurés."
+    />
     {/* <SEO title="Home" /> */}
     <div
       className="relative h-screen"
