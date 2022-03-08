@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useState } from "react"
+import React, { Fragment } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import {
   BookmarkAltIcon,
@@ -13,9 +13,8 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/solid"
 import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri"
 
-import { graphql, Link as GatsbyLink } from "gatsby"
+import { Link as GatsbyLink } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { useStaticQuery } from "gatsby"
 
 const solutions = [
   {
@@ -31,6 +30,13 @@ const solutions = [
       "Si vous souhaitez vous sentir mieux niveau santé, plus fort et plus actif, nous sommes là pour s'occuper de vous.",
     href: "/physiotherapie",
     icon: RiNumber2,
+  },
+  {
+    name: "Traitement douleurs",
+    description:
+      "Chez Super Masseur, notre physiothérapeute attaquera la source même de votre douleur au dos afin de vous procurer un traitement approprié et efficace.",
+    href: "/traitement-douleurs",
+    icon: RiNumber3,
   },
 ]
 const callsToAction = [
@@ -158,7 +164,6 @@ export default function Navigation() {
                     to="/"
                     className="text-2xl lg:text-3xl text-primary"
                   >
-                    {/* Executive physiotherapy */}
                     <StaticImage
                       src="../assets/images/logo.png"
                       alt="logo"

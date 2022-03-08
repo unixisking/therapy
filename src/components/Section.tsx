@@ -24,7 +24,7 @@ export default function Section(props: ISection) {
             </h2>
           )}
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24">
-            <div className="hidden lg:block">{props.image}</div>
+            <div className="hidden lg:block -mt-8">{props.image}</div>
             <div className="mx-auto space-y-8">
               {props.title && (
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
@@ -87,7 +87,7 @@ export default function Section(props: ISection) {
                 </Button>
               )}
             </div>
-            <div className="hidden lg:block">{props.image}</div>
+            <div className="hidden lg:block -mt-8">{props.image}</div>
           </div>
         </section>
       )}

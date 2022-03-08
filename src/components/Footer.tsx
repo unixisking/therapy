@@ -26,12 +26,12 @@ const navigation = {
   ],
   support: [
     { name: "Contact", href: "/contact" },
-    { name: "Faq", href: "/faq" },
+    { name: "Faq", href: "/a-propos#faq" },
   ],
   services: [
     { name: "Massothérapie", href: "/massotherapie" },
     { name: "Physiothérapie", href: "/physiotherapie" },
-    { name: "Traitement De La Douleur", href: "/services" },
+    { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
     { name: "Rééducation Sportive ", href: "/services" },
     { name: "Rééducation Pré-chirurgicale ", href: "/services" },
     { name: "Rééducation Post-chirurgicale", href: "/services" },
