@@ -38,6 +38,13 @@ const solutions = [
     href: "/traitement-douleurs",
     icon: RiNumber3,
   },
+  {
+    name: "Rééducation Cardiaque",
+    description:
+      "La rééducation cardiaque est destinée à tous les patients victimes de graves troubles cardiaques, tels qu'un infarctus du myocarde, une insuffisance cardiaque.",
+    href: "/reeducation-cardiaque",
+    icon: RiNumber3,
+  },
 ]
 const callsToAction = [
   {

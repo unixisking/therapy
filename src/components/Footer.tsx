@@ -33,9 +33,9 @@ const navigation = {
     { name: "Physiothérapie", href: "/physiotherapie" },
     { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
     { name: "Rééducation Sportive ", href: "/services" },
-    { name: "Rééducation Pré-chirurgicale ", href: "/services" },
-    { name: "Rééducation Post-chirurgicale", href: "/services" },
-    { name: "Rééducation cardiaque", href: "/services" },
+    { name: "Réhabilitation préopératoire", href: "/services" },
+    { name: "Réhabilitation postopératoire", href: "/services" },
+    { name: "Rééducation cardiaque", href: "/reeducation-cardiaque" },
   ],
   legal: [
     { name: "Chemin du viaduc 12, 1008 Prilly , Swisse", href: "/" },

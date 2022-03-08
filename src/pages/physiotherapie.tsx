@@ -6,7 +6,6 @@ import linesImg from "../assets/images/lines.png"
 
 import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
-import ContactSection from "../components/ContactSection"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
@@ -57,6 +56,7 @@ const IndexPage = () => (
         className="absolute hidden lg:block lg:-bottom-72 w-full"
       />
     </div>
+    <div className="-mt-12 lg:-mt-24" />
     <Section
       isImageRight
       title="Physiothérapie"

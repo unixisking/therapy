@@ -52,6 +52,7 @@ const IndexPage = () => (
         className="absolute hidden lg:block lg:-bottom-72 w-full"
       />
     </div>
+    <div className="-mt-12 lg:-mt-24" />
     <Section
       isImageRight
       title="Traitement Douleurs"

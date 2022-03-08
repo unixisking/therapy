@@ -15,7 +15,7 @@ interface ISection {
 
 export default function Section(props: ISection) {
   return (
-    <div className="mt-12 lg:mt-24">
+    <div className="relative mt-12 lg:mt-24">
       {props.isImageRight === true ? (
         <section className="lg:max-w-7xl px-4 lg:px-6 mx-auto">
           {props.headline && (
