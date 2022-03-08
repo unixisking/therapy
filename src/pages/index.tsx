@@ -85,8 +85,8 @@ const IndexPage = () => (
           savoir plus sur notre façon de vous soulager de la douleur et de vous
           faire sentir plus en forme, n'hésitez pas à nous contacter !
         </p>
-        <Button to="/" size="large">
-          Découvrir Plus
+        <Button to="/#reservez" size="large">
+          Réservez Une Séance Maintenant
         </Button>
       </div>
       <img src={WhoAreWeImg} alt="" className="hidden lg:block" />
