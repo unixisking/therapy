@@ -11,7 +11,13 @@ import {
   XIcon,
 } from "@heroicons/react/outline"
 import { ChevronDownIcon } from "@heroicons/react/solid"
-import { RiNumber1, RiNumber2, RiNumber3 } from "react-icons/ri"
+import {
+  RiNumber1,
+  RiNumber2,
+  RiNumber3,
+  RiNumber4,
+  RiNumber5,
+} from "react-icons/ri"
 
 import { Link as GatsbyLink } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -43,7 +49,14 @@ const solutions = [
     description:
       "La rééducation cardiaque est destinée à tous les patients victimes de graves troubles cardiaques, tels qu'un infarctus du myocarde, une insuffisance cardiaque.",
     href: "/reeducation-cardiaque",
-    icon: RiNumber3,
+    icon: RiNumber4,
+  },
+  {
+    name: "Réhabilitation post opératoire",
+    description:
+      "Elle aide également à prévenir les complications qui pourraient survenir après une opération.",
+    href: "/rehabilitation-post-operatoire",
+    icon: RiNumber5,
   },
 ]
 const callsToAction = [
@@ -96,7 +109,7 @@ export default function Navigation() {
   return (
     <Popover className="absolute top-0 w-screen py-5 z-20">
       <div className="max-w-7xl px-4 sm:px-12">
-        <div className="flex justify-between items-center md:justify-start md:space-x-48 mt-4 mx-4">
+        <div className="flex justify-between items-center md:justify-start md:space-x-48 mt-4 mx-auto">
           <GatsbyLink to="/" className="text-2xl lg:text-3xl text-white">
             <StaticImage
               src="../assets/images/logo-white.png"
@@ -280,7 +293,7 @@ const FlyoutMenu = ({ title, links }) => {
                     <GatsbyLink
                       key={item.name}
                       to={item.href}
-                      className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      className="-m-3 p-1 flex items-start rounded-lg hover:bg-gray-50"
                     >
                       <item.icon
                         className="mt-2 flex-shrink-0 h-6 w-6 text-blueish"

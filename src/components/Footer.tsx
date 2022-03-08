@@ -34,7 +34,10 @@ const navigation = {
     { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
     { name: "Rééducation Sportive ", href: "/services" },
     { name: "Réhabilitation préopératoire", href: "/services" },
-    { name: "Réhabilitation postopératoire", href: "/services" },
+    {
+      name: "Réhabilitation postopératoire",
+      href: "/rehabilitation-post-operatoire",
+    },
     { name: "Rééducation cardiaque", href: "/reeducation-cardiaque" },
   ],
   legal: [
