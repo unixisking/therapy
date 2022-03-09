@@ -2,41 +2,49 @@ import React from "react"
 
 export default function ScheduleSecton() {
   return (
-    <div
-      id="reservez"
-      className="relative mt-12 lg:mt-24 px-4 sm:px-6 lg:max-w-7xl grid grid-col-1 lg:grid-cols-2 gap-24 mx-auto"
-    >
-      <div className="space-y-12 lg:pt-24">
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
-          Réservez Une Séance Maintenant
-        </h2>
-        <div className="space-y-4">
-          <h3 className="text-2xl lg:text-3xl font-extrabold text-primary mb-4">
-            Disponible par téléphone
-          </h3>
-          <a href="tel:+41792322074" className="text-base text-grey font-bold">
-            +41 79 232 20 74
-          </a>
+    <div className="mx-auto mt-12 lg:mt-24 px-4 sm:px-6 lg:max-w-7xl">
+      <h2 className="text-3xl lg:text-4xl font-extrabold text-primary text-center">
+        Prenez un rendez-vous aujourd'hui
+      </h2>
+      <div
+        id="reservez"
+        className="relative mt-12 lg:mt-24 px-4 sm:px-6 lg:max-w-7xl grid grid-col-1 lg:grid-cols-2 gap-24 mx-auto"
+      >
+        <div className="space-y-12 lg:pt-24">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
+            Réservez Une Séance Maintenant
+          </h2>
+          <div className="space-y-4">
+            <h3 className="text-2xl lg:text-3xl font-extrabold text-primary mb-4">
+              Disponible par téléphone
+            </h3>
+            <a
+              href="tel:+41792322074"
+              className="text-base text-grey font-bold"
+            >
+              +41 79 232 20 74
+            </a>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-2xl lg:text-3xl font-extrabold text-primary">
+              Nous vous rappelons que
+            </h3>
+            <p className="text-base text-grey">
+              Votre physiothérapie est remboursée par les assurances maladie.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-2xl lg:text-3xl font-extrabold text-primary">
+              Prière de vous munir de
+            </h3>
+            <p className="text-base text-grey">
+              Une serviette et des vêtements confortables qui vous permettront
+              de vous sentir à l'aise lors de vos séances de physiothérapie.
+            </p>
+          </div>
         </div>
-        <div className="space-y-4">
-          <h3 className="text-2xl lg:text-3xl font-extrabold text-primary">
-            Nous vous rappelons que
-          </h3>
-          <p className="text-base text-grey">
-            Votre physiothérapie est remboursée par les assurances maladie.
-          </p>
-        </div>
-        <div className="space-y-4">
-          <h3 className="text-2xl lg:text-3xl font-extrabold text-primary">
-            Prière de vous munir de
-          </h3>
-          <p className="text-base text-grey">
-            Une serviette et des vêtements confortables qui vous permettront de
-            vous sentir à l'aise lors de vos séances de physiothérapie.
-          </p>
-        </div>
+        <ScheduleForm />
       </div>
-      <ScheduleForm />
     </div>
   )
 }

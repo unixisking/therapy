@@ -65,17 +65,17 @@ const IndexPage = () => (
         </h2>
         <img src={WhoAreWeImg} alt="" className="w-96 mx-auto lg:hidden" />
         <p className="text-base text-grey mt-4">
-          Nous sommes un cabinet de physiothérapie indépendant basé à Prilly.
+          Notre équipe est pluridisciplinaire et hautement qualifiée avec plus
+          de 20 ans d'expérience, notamment dans le domaine du traitement post
+          opératoire, de la rééducation cardiaque, des pathologies chroniques… .
           <br />
-          Peu importe le type de blessure que vous avez subie ou peu importe la
-          nature de votre douleur, le physiothérapeute de Super Masseur vous
-          accompagnera tout au long de votre thérapie et élaborera un programme
-          de traitement personnalisé et adapté à vos besoins.
-          <br /> Ce programme vous permettra de vous remettre en forme, de
-          gagner en souplesse, de retrouver votre équilibre et surtout de
-          reprendre une vie plus saine et plus active. Ainsi, si vous désirez en
-          savoir plus sur notre façon de vous soulager de la douleur et de vous
-          faire sentir plus en forme, n'hésitez pas à nous contacter !
+          Notre équipe adopte une approche médicale novatrice et s'attache donc
+          non seulement à traiter la douleur, mais aussi à traiter la source de
+          la douleur.
+          <br />
+          Nos programmes vous permettront de vous remettre en forme, de gagner
+          en souplesse, de retrouver votre équilibre et surtout de reprendre une
+          vie plus saine et plus active.
         </p>
         <Button to="/#reservez" size="large">
           Réservez Une Séance Maintenant
@@ -84,6 +84,7 @@ const IndexPage = () => (
       <img src={WhoAreWeImg} alt="" className="hidden lg:block" />
     </div>
     <Services />
+
     <ScheduleSecton />
     {/* <div className="mt-24 lg:mt-32 max-w-xl px-4 sm:px-6 lg:max-w-7xl mx-auto grid grid-col-1 lg:grid-cols-3 gap-12">
       <div className="lg:col-span-2 space-y-4 lg:max-w-2xl">

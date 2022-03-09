@@ -5,9 +5,6 @@ module.exports = {
     author: `@try2promote`,
     siteUrl: "https://super-masseur.ch",
   },
-  flags: {
-    THE_FLAG: false,
-  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -33,6 +30,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-TNB9HLX",
+
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+
+        enableWebVitalsTracking: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

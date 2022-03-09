@@ -34,12 +34,6 @@ export default function WhyUs() {
           <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
             Pourquoi Nous Choisir ?
           </h2>
-          <p className="mt-4 text-lg text-grey">
-            Qu'est-ce qui pourrait vous inciter à choisir Super Masseur
-            Physiothérapie pour vous aider dans votre réhabilitation ? Voici
-            quelques bonnes raisons de choisir notre cabinet de physiothérapie à
-            Prilly...
-          </p>
         </div>
         <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
           {features.map(feature => (

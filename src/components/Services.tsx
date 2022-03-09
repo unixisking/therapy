@@ -29,9 +29,9 @@ export default function Services() {
           Les Services Que Nous Proposons
         </h2>
         <p className="mt-4 text-base sm:text-lg text-grey">
-          Chez Super Masseur Physiothérapie, nous cherchons à améliorer la vie
-          de nos patients de façon permanente. Notre physiothérapeute à Prilly a
-          acquis une expertise dans différentes disciplines thérapeutiques, dont
+          Chez Edelweiss Physio nous cherchons à améliorer la vie de nos
+          patients de façon permanente. Notre physiothérapeute à Prilly a acquis
+          une expertise dans différentes disciplines thérapeutiques, dont
           certaines sont uniquement disponibles dans notre cabinet. Voici un
           aperçu de nos services...
         </p>
