@@ -24,18 +24,19 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const solutions = [
   {
+    name: "Physiothérapie",
+    description:
+      "Si vous souhaitez vous sentir mieux niveau santé, plus fort et plus actif, nous sommes là pour s'occuper de vous.",
+    href: "/physiotherapie",
+    icon: RiNumber1,
+  },
+  /*
+  {
     name: "Massothérapie",
     description:
       "Si vous cherchez à améliorer votre santé physique et psychologique.",
     href: "/massotherapie",
     icon: RiNumber1,
-  },
-  {
-    name: "Physiothérapie",
-    description:
-      "Si vous souhaitez vous sentir mieux niveau santé, plus fort et plus actif, nous sommes là pour s'occuper de vous.",
-    href: "/physiotherapie",
-    icon: RiNumber2,
   },
   {
     name: "Traitement douleurs",
@@ -58,6 +59,7 @@ const solutions = [
     href: "/rehabilitation-post-operatoire",
     icon: RiNumber5,
   },
+  */
 ]
 const callsToAction = [
   {
@@ -149,13 +151,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <GatsbyLink
               to={homeFormUrls.includes(url) ? "/#reservez" : "#reservez"}
-              style={{
-                background:
-                  "linear-gradient(91.76deg, rgba(98, 169, 255, 0.8) 0.15%, rgba(176, 208, 255, 0.8) 102.56%)",
-                boxShadow: "6px 6px 20px rgba(9, 34, 124, 0.25)",
-                borderRadius: "10px",
-              }}
-              className="ml-24 whitespace-nowrap inline-flex items-center justify-center px-12 py-4 border border-transparent shadow-sm text-base font-medium text-white rounded-lg drop-shadow-lg focus:outline-none outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+              className="ml-24 whitespace-nowrap inline-flex items-center justify-center px-12 py-4 border border-transparent shadow-sm text-base font-medium bg-white text-primary rounded-lg drop-shadow-lg focus:outline-none outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
             >
               <span></span>Reservez
             </GatsbyLink>
