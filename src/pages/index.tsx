@@ -38,18 +38,18 @@ const IndexPage = () => (
       /> */}
       <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
-          Physiothérapie à Prilly
+          Physiotherapie PRILLY-MALLEY
         </h1>
         <p className="text-base text-white mt-4">
-          Votre physiothérapeute s'engage à vous accompagner tout au long du
-          processus de réhabilitation afin que vous puissiez vous rétablir le
-          plus rapidement possible.
+          Notre équipe de physiothérapeutes diplômés et expérimentés vous
+          accompagne dans votre processus de réhabilitation, et elle vous
+          propose une multitude de thérapies intéressantes.
         </p>
         <Link
           to="/services"
           className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-6 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
-          Découvrez Maintenant
+          Découvrez nos thérapies
         </Link>
       </div>
       <img

@@ -2,19 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import Navigation from "../components/Navigation"
 
-import WhyUs from "../components/WhyUs"
-import Button from "../components/Button"
-// import Layout from "../components/layout"
-
 import HeaderImg from "../assets/images/homepage-header-img.png"
-import OneImg from "../assets/images/one.png"
-import TwoImg from "../assets/images/two.png"
-import ThreeImg from "../assets/images/three.png"
-import FourImg from "../assets/images/four.png"
-import HealthImg from "../assets/images/health.png"
+
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
@@ -33,14 +24,14 @@ const IndexPage = () => (
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
-          Services & Traitements
+          THÉRAPIES & Traitements
         </h1>
         <p className="text-base text-white mt-4">
-          Notre cabinet de physiothérapie Super Masseur propose à ses patients
-          un éventail de traitements couvrant un grand nombre de pathologies. En
-          effet, nos services englobent plusieurs techniques de réhabilitation
-          en cas de blessure, de traitement des douleurs, ainsi que tout autre
-          aspect relatif à la santé et au bien-être en général.
+          Notre cabinet de physiothérapie Edelweiss Physio propose à ses
+          patients un éventail de traitements couvrant un grand nombre de
+          pathologies. En effet, nos services englobent plusieurs techniques de
+          réhabilitation en cas de blessure, de traitement des douleurs, ainsi
+          que tout autre aspect relatif à la santé et au bien-être en général.
         </p>
         <Link
           to="/#reservez"
@@ -56,8 +47,7 @@ const IndexPage = () => (
     </div>
     <Section
       title="Physiothérapie"
-      description="Développez et redonnez de la force à votre corps afin que vous soyez en parfaite condition physique et que    vous puissiez mener une vie active et saine. Le    physiothérapeute peut traiter les patients en utilisant une variété de techniques, notamment les suivantes : 
-      "
+      description="Nos physiothérapeutes vous aident à développer et renforcer votre corps afin de retrouver votre condition physique d'avant ou de l'améliorer. Pour traiter vos pathologies, nos physiothérapeutes utilisent une variété de techniques, parmi lesquelles les suivantes :"
       points={[
         "Thérapie manuelle.",
         "Trigger point.",
@@ -76,7 +66,8 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Traitement de Douleurs"
-      description="Reprenez pleinement possession de votre corps, retrouver votre souplesse, mobilité et récupérer votre autonomie, tout en apaisant vos douleurs avec l'aide de notre physiothérapeute. Notre physiothérapeute peut intervenir pour traiter diverses douleurs physiques que vous éprouvez, y compris :"
+      description="Notre équipe de physiothérapeutes vous aidera à reprendre pleinement contrôle de votre corps. Retrouvez votre souplesse, votre mobilité et votre autonomie tout en soulageant vos douleurs. 
+      Nos physiothérapeutes peuvent intervenir pour traiter diverses douleurs physiques, parmi lesquelles les suivantes:"
       points={[
         "Douleur Bas du Dos/ Haut du Dos",
         "Douleur epaule et cou",
@@ -94,8 +85,8 @@ const IndexPage = () => (
       }
     />
     <Section
-      title="Massothérapie"
-      description="Éliminez toutes les tensions, le stress et les courbatures avec nos divers massages afin de favoriser le processus de guérison, et d’améliorer le  bien-être des patients. Cela inclut :"
+      title="Massage"
+      description="Nos physiothérapeutes utilisent des huiles essentielles et diverses techniques de massage pour vous aider à éliminer toutes les tensions, le stress et les douleurs. Nous vous proposons différents types de massages, parmi lesquels vous trouverez :"
       points={[
         "Massage relaxant pour apaiser et détendre le corps et l'esprit.",
         "Massage sportif pour décontracter et assouplir les muscles des sportifs et accroître leurs capacités.",
@@ -113,7 +104,7 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Rééducation Sportive"
-      description="Les blessures sportives peuvent toucher tout le monde. Peu importe la nature de la blessure, n'attendez pas pour consulter. Le thérapeute peut vous proposer comme traitement la physiothérapie et la rééducation. Le but ultime est de :"
+      description="Les blessures sportives peuvent toucher n'importe qui. Quelle que soit la nature de la blessure, nos thérapeutes peuvent vous proposer la rééducation sportive comme traitement qui a pour but de :"
       points={[
         "Restaurer les fonctions musculaires",
         "Atténuer au maximum la douleur",
@@ -132,7 +123,7 @@ const IndexPage = () => (
     />
     <Section
       title="Réhabilitation Préopératoire"
-      description="Si vous allez bientôt vous faire opérer, la réhabilitaion préopératoire vous permettra à la fois de préparer votre corps et de raccourcir la durée de votre convalescence. Votre programme sera principalement centré sur les points ci-après :"
+      description="Vous allez bientôt subir une intervention chirurgicale ? Notre équipe vous aidera à préparer votre corps à l'opération et vous aidera à accélérer votre période de récupération. Nos programmes seront axés sur les points ci-dessus: "
       points={[
         "Le conditionnement physique.",
         "Une série de mouvements.",
@@ -152,8 +143,8 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Réhabilitation Post opératoire"
-      description="Vous souhaitez reprendre pied le plus rapidement possible après une intervention chirurgicale ? Avec l'aide de physiothérapeute, vous pourrez à nouveau vous adonner aux activités qui vous passionnent grâce à la réhabilitation post opératoire !<br/>
-      Cette dernière peut aider à : 
+      description="
+      Vous souhaitez vous remettre rapidement sur pied après votre opération et reprendre vos activités habituelles ? Nos physiothérapeutes peuvent vous aider à :
       "
       points={[
         "Atténuer le plus possible vos douleurs.",
@@ -171,8 +162,7 @@ const IndexPage = () => (
     />
     <Section
       title="Rééducation Cardiaque"
-      description="La rééducation cardiaque 
-      peut apporter beaucoup de bienfaits aux personnes souffrant de maladies cardiaques et ainsi reprendre une vie normale, y compris :"
+      description="Nos physiothérapeutes peuvent vous aider, grâce à la rééducation cardiaque, à:"
       points={[
         "Améliorer la santé de votre cœur et de votre organisme en cas d'infarctus.",
         "Apaiser les symptômes liés aux pathologies cardiovasculaires.",

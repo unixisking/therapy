@@ -49,18 +49,15 @@ const IndexPage = () => (
           Notre cabinet de physiothérapie à Prilly
         </h2>
         <p className="text-base text-grey">
-          Super Masseur est un cabinet de physiothérapie dont la principale
+          Edelweiss Physio est un cabinet de physiothérapie dont la principale
           mission est de faire bénéficier les personnes atteintes de pathologies
           perturbant leurs mouvements, leurs capacités physiques, et leur santé
-          générale d'une physiothérapie de pointe.
-          <br />
-          Nous nous occupons du diagnostic et du suivi thérapeutique des
-          patients victimes de lésions musculo–squelettiques et
-          neuromusculaires.
-          <br />
-          Nous mettons à votre disposition des équipements performants, ainsi
-          que des techniques thérapeutiques fiables, afin que chaque patient ait
-          droit à une prise en charge professionnelle et de qualité.
+          en générale d'une physiothérapie de pointe. Nous nous occupons du
+          diagnostic et du suivi thérapeutique des patients victimes de lésions
+          musculo–squelettiques et neuromusculaires. Nous mettons à votre
+          disposition des équipements performants, ainsi que des techniques
+          thérapeutiques efficaces, afin que chaque patient ait droit à une
+          prise en charge professionnelle et de qualité.
         </p>
       </div>
       <div className="col-span-2 space-y-4">
@@ -68,25 +65,17 @@ const IndexPage = () => (
           Notre objectif ? : être présent pour vous !
         </h2>
         <p className="text-base text-grey max-w-2xl">
-          Dans notre cabinet de physiothérapie, notre principale préoccupation
-          est de participer à votre bien-être et d'améliorer ainsi votre santé
-          physique.
+          La principale préoccupation de nos physiothérapeutes est d’améliorer
+          votre bien-être et votre santé physique.
           <br />
           Si vous êtes dans le canton de Vaud, à Prilly ou aux alentours, et que
           vous souhaitez retrouver votre forme, alors ne cherchez pas plus loin.
-          Super Masseur est à votre disposition comme l'un des cabinets de
-          physiothérapie à privilégier à Prilly. <br />
-          Nous vous précisons également que notre physiothérapeute a 30 ans
-          d'expérience dans le domaine et qu'il sera ravi de vous recevoir dans
-          son cabinet afin de vous créer un programme adapté à vos besoins.
-          Notre physiothérapeute fait preuve de beaucoup de compassion, de
-          compréhension, de respect, de persévérance et par-dessus tout, il est
-          passionné par son travail.
+          Edelweiss Physio est là pour vous.
           <br />
-          Envie d'en connaître davantage sur nos prestations ? N'hésitez pas à
-          nous joindre par téléphone à{" "}
-          <a href="tel:+41792322074">+41 79 232 20 74</a> ou via notre
-          formulaire en ligne.
+          Nos physiothérapeutes font preuve de beaucoup de compassion, de
+          compréhension, persévérance et par-dessus tout, ils sont passionnés
+          par leur travail. Envie d'en connaître davantage sur nos thérapies et
+          traitements ? N'hésitez pas à nous contacter.
         </p>
       </div>
     </div>

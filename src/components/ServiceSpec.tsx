@@ -7,6 +7,7 @@ import BlueBgImg2 from "../assets/images/services/physiotherapie/physio-spec-ima
 interface IServiceSpec {
   title: string
   data: { title: string; desc: string }[]
+  description?: string
   // withImage?: boolean
 }
 
@@ -50,6 +51,9 @@ export default function (props: IServiceSpec) {
         <h2 className="relative text-3xl lg:text-4xl font-extrabold text-white mb-8">
           {props.title}
         </h2>
+        {props.description && (
+          <p className="my-3 text-white">{props.description}</p>
+        )}
         <div className="relative grid cols-1 sm:grid-cols-2 gap-12">
           {props.data.map((item, index) => (
             <div key={item.title} className="space-y-2">

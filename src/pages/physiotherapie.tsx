@@ -18,19 +18,15 @@ const spec = [
   },
   {
     title: "Étirements",
-    desc: "Notre physiothérapeute vous propose une série d'exercices pour améliorer la souplesse des mouvements du corps. Le physiothérapeute élabore les exercices d'étirement appropriés pour parvenir à la flexibilité souhaitée.",
+    desc: "Nos physiothérapeutes vous proposent une série d'exercices pour améliorer la souplesse des mouvements du corps. Les physiothérapeutes élaborent les exercices d'étirement appropriés pour parvenir à la flexibilité souhaitée.",
   },
   {
-    title: "La thermothérapie",
-    desc: "Si un patient souffre de contractions musculaires à différents endroits du corps, le traitement à la chaleur ou au froid peut s'avérer efficace. Le froid réduit les douleurs, tandis que la chaleur a tendance à décontracter les muscles.",
+    title: "Trigger point",
+    desc: "Afin de soulager les migraines, les douleurs de dos et les douleurs articulaires, la technique du trigger point est également employée en physiothérapie. Elle permet aussi de traiter les douleurs sciatiques et l'épicondylite.",
   },
   {
-    title: "Le drainage lymphatique",
-    desc: "Le drainage lymphatique est un traitement effectué chez les personnes qui font de la rétention d'eau. Il a pour effet de faire évacuer le surplus de liquide accumulé dans les tissus et de stimuler la circulation sanguine.",
-  },
-  {
-    title: "Le Kinesio taping",
-    desc: "La technique du Kinesio Taping à pour effet de minimiser les gonflements et les ecchymoses. Elle permet aussi de diminuer la tension musculaire.",
+    title: "L'électrothérapie",
+    desc: "L'électrothérapie est un traitement qui fait usage de courants électriques puissants ou de faibles fréquences à des fins thérapeutiques. Elle aide à traiter les douleurs, à renforcer ou à tonifier les muscles, ainsi qu'à réduire les inflammations et les contractions musculaires.",
   },
 ]
 
@@ -46,10 +42,15 @@ const IndexPage = () => (
         alt=""
         className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
       />
-      <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
-          Physiothérapie
+      <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
+        <h1 className="text-4xl lg:text-6xl font-bold text-white">
+          Physiotherapie Prilly-MALLEY
         </h1>
+        <p className="text-base text-white mt-4">
+          Edelweiss Physio vous propose des thérapies physiques de haut niveau.
+          Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
+          une meilleure forme physique.
+        </p>
       </div>
       <img
         src={linesImg}
@@ -60,11 +61,11 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Physiothérapie"
-      description="La physiothérapie est un processus thérapeutique destiné à améliorer vos performances physiques après une blessure peu importe sa nature, et à vous permettre de continuer à vivre pleinement votre vie.<br/>
-	  Notre physiothérapeute met à votre disposition ses compétences, son savoir-faire et ses connaissances pour non seulement faciliter la guérison rapide des blessures et éliminer les douleurs, mais aussi à empêcher le développement d'autres troubles physiques plus graves.<br/>
-	  Notre kinésithérapeute est en mesure de détecter les parties du corps affectées et de concevoir un traitement sur-mesure dans le but de les améliorer au maximum.<br/>
-	  Grâce aux traitements effectués en cabinet, les patients sont en mesure de renforcer les muscles et les joints, de travailler l'équilibre, la résistance et d'apaiser la douleur.
-	  "
+      description="
+      Nos physiothérapeutes mettent leurs compétences et leur savoir-faire à votre disposition pour non seulement accélérer la guérison de vos blessures et éliminer vos douleurs, mais aussi pour empêcher la survenue de problèmes physiques plus graves.<br/>
+Nos physiothérapeutes arrivent à identifier les parties corporelles affectées et à concevoir des traitements appropriés.
+Ainsi, nos patients peuvent renforcer leurs articulations et muscles, développer leur équilibre, et soulager leurs douleurs.
+      "
       image={
         <StaticImage
           src="../assets/images/services/physiotherapie/physiotherapie.png"
@@ -73,15 +74,17 @@ const IndexPage = () => (
         />
       }
     />
-    <ServiceSpec title="Techniques de physiothérapie" data={spec} />
+    <ServiceSpec
+      title="Techniques de physiothérapie"
+      description="Nos physiothérapeutes maîtrisent plusieurs techniques de physiothérapie, parmi lesquelles on peut citer :"
+      data={spec}
+    />
     <Section
       isImageRight
       headline="À qui est destinée la physiothérapie ?"
-      description="La physiothérapie est destinée à tous ceux qui, à cause de la douleur, ne parviennent pas à accomplir leurs fonctions journalières habituelles, à effectuer des mouvements ou à pratiquer des exercices sportives ou tout autre type d'activité.<br/>
-	  La physiothérapie est particulièrement efficace pour les personnes qui souhaitent augmenter leur capacité fonctionnelle et qui semblent déterminées à collaborer avec notre physiothérapeute pour y parvenir.<br/>
-	  Si vous souhaitez vous sentir mieux niveau santé, plus fort et plus actif, nous sommes là pour s'occuper de vous.<br/>
-	   Contactez-nous dès aujourd'hui pour fixer un rendez-vous avec notre physiothérapeute. 
-	  "
+      description="
+      La physiothérapie est destinée aux personnes souffrant de douleurs les empêchant d'accomplir leurs activités journalières habituelles. Elle s'adresse également aux personnes voulant simplement améliorer leurs capacités physiques et prévenir les blessures grâce à nos différents programmes de renforcement musculaire. Si vous souhaitez demander une consultation avec l'un de nos experts, il se fera un plaisir de vous proposer la meilleure thérapie pour vous.
+      "
       image={
         <StaticImage
           src="../assets/images/services/physiotherapie/physio-audience.png"

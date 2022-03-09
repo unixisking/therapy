@@ -6,9 +6,10 @@ import Icon3 from "../assets/icons/solid-experience.svg"
 
 const features = [
   {
-    name: "Traitement un grand nombre de pathologies",
+    name: "Traitement et soulagement de douleursj",
     description:
-      "Notre physiothérapeute est en mesure de traiter efficacement un grand nombre de pathologies en appliquant les techniques les plus avancées.",
+      "Notre physiothérapeute est en mesure de traiter et soulager vos douleurs en appliquant les techniques de physiothérapie les plus avancées.",
+
     icon: Icon1,
   },
   {
@@ -20,7 +21,7 @@ const features = [
   {
     name: "Une solide expérience",
     description:
-      "Notre physiothérapeute a plus de 30 ans d'expérience à son actif. Vous pourrez bénéficier de son savoir-faire afin d'améliorer votre santé et votre bien-être!",
+      "Notre physiothérapeute a acquis une expérience considérable en la matière. Vous pourrez bénéficier de son savoir-faire afin d'améliorer votre santé et votre bien-être !",
     icon: Icon3,
   },
 ]

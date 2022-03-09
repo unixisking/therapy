@@ -6,30 +6,19 @@ export default function Bio() {
     <section className="mt-12 lg:mt-24 bg-[#EFF1FD] w-screen">
       <div className="py-8 lg:py-24 px-6 lg:max-w-7xl mx-auto">
         <h2 className="text-3xl lg:text-4xl font-extrabold text-primary mb-8">
-          En savoir plus sur Cela Ibrahim - le proprio et physiothérapeute de
-          Super Masseur
+          À propos de Cela Ibrahim - le responsable du cabinet
         </h2>
         <p className="text-base text-grey">
-          en 1998. , Cela Ibrahim a commencé sa carrière en tant que
-          physiothérapeute. En 2014, il a exercé en tant que physiothérapeute
-          sportif dans un centre sportif et physio à Luxembourg. Il y assurait
-          les services de rééducation et réentrainement à l'effort.
-          <br /> Il a aussi occupé le rôle de responsable de la rééducation
-          cardio-pulmonaire dans un établissement hospitalier. Il a notamment
-          acquis des connaissances approfondies sur la pratique de la méthode de
-          l'École du Dos.
-          <br /> Il a par ailleurs travaillé au Centre Universitaire de Liège
-          (C.H.U) où il a pu se perfectionner dans les domaines de
-          l'hydrothérapie, de la rééducation orthopédique et neurologique, de la
-          traumatologie, de la rééducation des troubles Musculo-Squelettiques.
-          <br />
-          Il a aussi effectué plusieurs formations supplémentaires notamment
-          dans l'électrothérapie, le trigger point, l'échographie humaine, la
-          physio respiratoire, et traitement par ondes de choc. Il a par
-          ailleurs bénéficié d'une formation interne C.H.U. portant sur la
-          thérapie manuelle et notamment l'ostéopathie. Aujourd'hui, Cela
-          Ibrahim est désormais propriétaire de son propre cabinet de
-          physiothérapie à Prilly, dont il est le physiothérapeute principal.
+          Ayant plus de 20 ans d'expérience, Cela Ibrahim a commencé sa carrière
+          de physiothérapeute en 1998. En 2014, il a travaillé comme
+          physiothérapeute sportif au centre sportif et physio du Luxembourg, et
+          a ensuite rejoint le Centre universitaire de Liège (C.H.U.). Grâce à
+          ses expériences et des formations complémentaires, il a pu se
+          perfectionner dans les traitements et disciplines les plus avancées de
+          la physiothérapie, notamment l'hydrothérapie, la rééducation
+          orthopédique et respiratoire... Cet Ibrahim met son expertise et son
+          savoir-faire au profit de ses patients, n'hésitez pas à le contacter
+          au numéro <a href="tel:+41792322074">+41 79 232 20 74</a>.
         </p>
       </div>
       {/* <div className="px-12 pt-12 pb-32 lg:p-0">

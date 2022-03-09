@@ -58,8 +58,8 @@ const IndexPage = () => (
         className="block absolute z-10 top-0 h-screen right-0 w-screen"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
-          Massothérapie
+        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white uppercase">
+          Massage
         </h1>
       </div>
       <img
