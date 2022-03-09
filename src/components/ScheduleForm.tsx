@@ -111,9 +111,11 @@ const ScheduleForm = () => {
             id="service"
             name="service"
             className="p-4 border mt-1 block w-full pl-3 pr-10 text-base border-gray-300 focus:outline-none focus:ring-[#556AFE] focus:border-[#556AFE] sm:text-sm rounded-md"
-            defaultValue="Massothérapie"
           >
-            <option defaultChecked>Massothérapie</option>
+            <option disabled selected defaultChecked>
+              -
+            </option>
+            <option>Massothérapie</option>
             <option>Physiothérapie</option>
             <option>Traitement de Douleurs</option>
             <option>Rééducation Sportive</option>

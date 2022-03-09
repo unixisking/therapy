@@ -92,7 +92,6 @@ const IndexPage = () => (
     </div>
     <Bio />
     <Faq />
-    <SecondaryCta />
     {/* <img
       className="w-screen"
       src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+ea3e72(6.6021,46.5281)/6.6031,46.528,14.56,0/1280x600?access_token=pk.eyJ1IjoiYnJhaGltaXNpZGFobWVkIiwiYSI6ImNrenlyZDZ2eTAzNGszZHQxNW94emh5a3UifQ.arT-fjYXk7ni-RD_NhxQ_g"

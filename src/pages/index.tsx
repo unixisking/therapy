@@ -4,21 +4,13 @@ import Navigation from "../components/Navigation"
 
 import WhyUs from "../components/WhyUs"
 import Button from "../components/Button"
-// import Layout from "../components/layout"
 
 import HeaderImg from "../assets/images/homepage-bg.png"
-import OneImg from "../assets/images/one.png"
-import TwoImg from "../assets/images/two.png"
-import ThreeImg from "../assets/images/three.png"
-import FourImg from "../assets/images/four.png"
-import HealthImg from "../assets/images/health.png"
 import linesImg from "../assets/images/lines.png"
 
 import WhoAreWeImg from "../assets/images/who-are-we.png"
 import Services from "../components/Services"
 import ScheduleSecton from "../components/ScheduleForm"
-import { ArrowRightIcon } from "@heroicons/react/outline"
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import SEO from "../components/seo"
 
@@ -92,53 +84,6 @@ const IndexPage = () => (
       <img src={WhoAreWeImg} alt="" className="hidden lg:block" />
     </div>
     <Services />
-    <div className="mt-12 lg:mt-24 max-w-xl px-4 sm:px-6 lg:max-w-7xl mx-auto">
-      <div className="max-w-3xl mx-auto text-center mb-8 lg:mb-16">
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-primary">
-          Comment Prendre Rendez-vous Avec Nous
-        </h2>
-        <p className="mt-4 text-base sm:text-lg text-grey">
-          Notre cabinet de physiothérapie est à votre écoute. Nous mettons tout
-          en œuvre pour que les patients que nous avons le plaisir de recevoir
-          reçoivent un traitement de physiothérapie de qualité. Vous pouvez
-          facilement prendre rendez-vous avec notre physiothérapeute.
-        </p>
-      </div>
-      <div className="relative mt-8 lg:mt-16 grid gap-12 lg:gap-48 grid-cols-2">
-        <img
-          src={HealthImg}
-          className="w-12 lg:w-24 absolute top-12 lg:top-0 bottom-0 left-0 right-0 m-auto"
-        />
-        <div className="flex flex-col lg:flex-row items-center">
-          <img src={OneImg} alt="" className="w-24 mr-4" />
-          <p className="text-base text-grey">
-            En utilisant notre formulaire de service et en fournissant les
-            informations nécessaires
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row items-center">
-          <img src={TwoImg} alt="" className="w-24 mr-4" />
-          <p className="text-base text-grey">
-            En contactant notre cabinet directement via notre numéro de
-            téléphone
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row items-center">
-          <img src={ThreeImg} alt="" className="w-24 mr-4" />
-          <p className="text-base text-grey ">
-            En nous envoyant un e-mail indiquant le type de service ou
-            traitement qu'il vous faut
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row items-center">
-          <img src={FourImg} alt="" className="w-24 mr-4" />
-          <p className="text-base text-grey">
-            En vous rendant directement dans notre cabinet de physiothérapie à
-            Prilly
-          </p>
-        </div>
-      </div>
-    </div>
     <ScheduleSecton />
     {/* <div className="mt-24 lg:mt-32 max-w-xl px-4 sm:px-6 lg:max-w-7xl mx-auto grid grid-col-1 lg:grid-cols-3 gap-12">
       <div className="lg:col-span-2 space-y-4 lg:max-w-2xl">
@@ -178,7 +123,6 @@ const IndexPage = () => (
         </Link>
       </div>
     </div> */}
-    <SecondaryCta />
     {/* <img
       className="w-screen"
       src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+ea3e72(6.6021,46.5281)/6.6031,46.528,14.56,0/1280x600?access_token=pk.eyJ1IjoiYnJhaGltaXNpZGFobWVkIiwiYSI6ImNrenlyZDZ2eTAzNGszZHQxNW94emh5a3UifQ.arT-fjYXk7ni-RD_NhxQ_g"
