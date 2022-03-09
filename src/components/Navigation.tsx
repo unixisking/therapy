@@ -108,7 +108,7 @@ export default function Navigation() {
 
   return (
     <Popover className="absolute top-0 w-screen py-5 z-20">
-      <div className="max-w-7xl px-4 sm:px-12">
+      <div className="max-w-7xl px-4 sm:px-12 mx-auto">
         <div className="flex justify-between items-center md:justify-start md:space-x-48 mt-4 mx-auto">
           <GatsbyLink to="/" className="text-2xl lg:text-3xl text-white">
             <StaticImage
