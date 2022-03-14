@@ -1,20 +1,20 @@
 import React from "react"
 import Navigation from "../components/Navigation"
 
-import HeaderImg from "../assets/images/services/physiotherapie/bg.png"
+import HeaderImg from "../assets/images/services/rehabilitation-post-operatoire/bg.png"
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
+import { Link } from "gatsby"
 
 const spec = [
   {
     title: "Les exercices après une opération de remplacement de la hanche",
-    desc: "La période de récupération à la suite d'une opération de remplacement de la hanche peut être longue. Le physiothérapeute vous fera effectuer des séances de rééducation afin de renforcer la hanche et de stabiliser et maintenir votre prothèse. Parmi ces exercices, vous trouverez : l'abduction de la hanche, monter et descendre des escaliers, la marche...",
+    desc: "La période de récupération à la suite d'une opération de remplacement de la hanche peut être longue. Les physiothérapeutes vous ferons effectuer des séances de rééducation afin de renforcer la hanche , de stabiliser et maintenir votre prothèse. Parmi ces exercices, vous trouverez : l'abduction de la hanche, monter et descendre des escaliers, la marche...",
   },
   {
     title: "Exercices post-chirurgie de l'épaule",
@@ -26,7 +26,7 @@ const spec = [
   },
   {
     title: "Exercices post-chirurgie de la colonne vertébrale",
-    desc: "Après une intervention chirurgicale sur la colonne vertébrale, le patient a besoin de séances de rééducation pour améliorer l'alignement, la balance et la coordination de son corps. Le physiothérapeute peut proposer des exercices post-chirurgie de la colonne vertébrale correspondant à la nature de la blessure et à l'intervention chirurgicale, tels que : étirement des nerfs, exercice du pont, extension des muscles du haut du corps...",
+    desc: "Le patient, après une intervention chirurgicale sur la colonne vertébrale, a besoin de séances de rééducation pour améliorer l'alignement, la balance et la coordination de son corps. Les physiothérapeutes  proposeront des exercices post opératoire de la colonne vertébrale tels que : étirement des nerfs, exercice du pont, extension des muscles du haut du corps...",
   },
 ]
 
@@ -42,10 +42,22 @@ const IndexPage = () => (
         alt=""
         className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
       />
-      <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
+      <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
           Réhabilitation post opératoire
         </h1>
+        <p className="text-base text-white mt-4">
+          Edelweiss Physio déploie tous les efforts possibles pour vous aider à
+          retrouver à nouveau vos fonctions physiques et pour faciliter et
+          accélérer votre retour à la vie active après une intervention
+          chirurgicale.
+        </p>
+        <Link
+          to="#reservez"
+          className="mt-3 py-4 px-12 whitespace-nowrap inline-flex items-center justify-center border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+        >
+          Réservez Maintenant
+        </Link>
       </div>
       <img
         src={linesImg}
@@ -56,8 +68,11 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Réhabilitation post opératoire"
-      description="Tout individu qui doit subir une opération chirurgicale à le droit de se sentir inquiet quant au déroulement de l'opération et à la durée de sa convalescence.<br/>
-	  La réhabilitation post opératoire avec notre physiothérapeute est une démarche particulièrement intéressante pour le patient. En effet, en plus de soulager les douleurs des patients et de faciliter et accélérer le processus de guérison, elle aide également à prévenir les complications qui pourraient survenir après une opération."
+      description="
+      Nos physiothérapeutes vous proposent une rééducation postopératoire particulièrement intéressante pour les patients qui ont subi une intervention chirurgicale récemment.<br/>
+Le traitement permet non seulement de diminuer la douleur du patient et de favoriser le processus de guérison et de récupération, mais permet également de prévenir les complications qui pourraient survenir après l'opération.
+      
+      "
       image={
         <StaticImage
           src="../assets/images/services/rehabilitation-post-operatoire/rehabilitation-post-operatoire.png"
@@ -66,12 +81,19 @@ const IndexPage = () => (
         />
       }
     />
-    <ServiceSpec title="Exercices Post Opératoire" data={spec} />
+    <ServiceSpec
+      title="Exercices Post Opératoire"
+      description="Nos physiothérapeutes proposent une série d'exercices ciblant la partie du corps qui a subi une intervention chirurgicale. Voici quelques-uns de ces exercices :"
+      data={spec}
+    />
     <Section
       headline="Comment la Réhabilitation post opératoire peut vous être utile ?"
-      description="Toute intervention chirurgicale peut avoir des effets divers sur le corps. Par conséquent, il est extrêmement utile de suivre un programme de réhabilitation post opératoire pour garantir qu'il n'y aura pas de complications une fois l'opération effectuée. Notre physiothérapeute est là pour vous accompagner et vous aider à récupérer et à améliorer vos fonctions après la chirurgie.<br/>
-	  La réhabilitation post opératoire a pour rôle de stimuler la circulation sanguine au niveau de la zone blessée afin que celle-ci cicatrise plus rapidement, et de limiter le risque de se blesser à nouveau grâce aux exercices de renforcement et de mobilité proposés dans le programme.<br/>
-	  Donc, si vous êtes sur le point de vous faire opérer, n'hésitez pas à prendre contact avec notre cabinet de physiothérapie dès aujourd'hui."
+      description="
+      Le suivi d'un programme de rééducation post opératoire  est particulièrement bénéfique pour empêcher tout risque de complications post opératoire.<br/>
+La rééducation post opératoire  stimule la circulation sanguine au niveau de la zone opérée afin d'accélérer sa cicatrisation, et de minimiser les risques de blessure grâce aux exercices de renforcement et de mobilité proposés dans le programme.<br/>
+N'hésitez pas à prendre contact avec notre cabinet de physiothérapie pour vous aider à vous rétablir  rapidement.
+
+      "
       image={
         <StaticImage
           src="../assets/images/services/rehabilitation-post-operatoire/audience.png"

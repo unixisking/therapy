@@ -51,7 +51,6 @@ const solutions = [
     href: "/reeducation-cardiaque",
     icon: RiNumber4,
   },
-  /*
   {
     name: "Réhabilitation post opératoire",
     description:
@@ -59,7 +58,6 @@ const solutions = [
     href: "/rehabilitation-post-operatoire",
     icon: RiNumber5,
   },
-  */
 ]
 const callsToAction = [
   {

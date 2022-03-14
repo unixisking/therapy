@@ -44,19 +44,19 @@ const IndexPage = () => (
         className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white uppercase">
+        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
           Traitement douleurs
         </h1>
-        <p className="text-base text-white mt-2">
+        <p className="text-base text-white mt-4">
           Edelweiss Physio vous propose des thérapies physiques de haut niveau.
           Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
           une meilleure forme physique.
         </p>
         <Link
           to="#reservez"
-          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-4 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
-          Prenez un rendez-vous
+          Réservez Maintenant
         </Link>
       </div>
       <img

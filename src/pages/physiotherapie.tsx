@@ -56,7 +56,7 @@ const IndexPage = () => (
           to="#reservez"
           className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
-          Prenez un rendez-vous
+          Réservez Maintenant
         </Link>
       </div>
       <img
