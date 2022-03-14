@@ -4,17 +4,17 @@ import Navigation from "../components/Navigation"
 import HeaderImg from "../assets/images/services/reeducation-cardiaque/bg.png"
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
+import { Link } from "gatsby"
 
 const spec = [
   {
     title: "Des exercices d'aérobic",
-    desc: "Afin d'améliorer la circulation sanguine, et de renforcer le cœur, le physiothérapeute vous propose des exercices d'aérobic qui sont particulièrement bénéfiques pour le cœur, car ils augmentent votre rythme cardiaque.",
+    desc: "Les physiothérapeutes vous proposent des exercices d'aérobic qui sont particulièrement bénéfiques pour le cœur, car ils augmentent votre rythme cardiaque et améliore la circulation sanguine.",
   },
   {
     title: "Exercices de renforcement musculaire",
@@ -22,7 +22,7 @@ const spec = [
   },
   {
     title: "Les exercices d'échauffement et d'étirement",
-    desc: "Il s'agit ici d'exercices dits légers que les patients souffrant de problèmes cardiaques sévères pourront effectuer ou qui serviront à préparer leur corps à fournir un effort physique plus intensif. Parmi ces activités, figurent : activités visant à stimuler le rythme cardiaque et exercices d'étirement ciblés. Le but demeure le même, à savoir accroître le rythme cardiaque.",
+    desc: "Notre équipe de physiothérapeutes prescrivent des d'exercices dits légers que les patients souffrant de problèmes cardiaques sévères pourront effectuer. Ils serviront aussi à préparer leur corps à fournir un effort physique plus intensif.",
   },
 ]
 
@@ -38,10 +38,22 @@ const IndexPage = () => (
         alt=""
         className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
       />
-      <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
+      <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
           Rééducation Cardiaque
         </h1>
+        <p className="text-base text-white mt-4">
+          Les programmes de rééducation cardiaque incitent et aident les
+          personnes atteintes de problèmes cardiovasculaires à améliorer leur
+          mode de vie. Le cabinet de physiothérapie Edelweiss Physio sera là
+          pour vous accompagner dans votre processus de guérison.
+        </p>
+        <Link
+          to="#reservez"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-6 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+        >
+          Prenez un rendez-vous
+        </Link>
       </div>
       <img
         src={linesImg}
@@ -52,9 +64,11 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Rééducation Cardiaque"
-      description="La rééducation cardiaque a pour but de vous aider pour vous remettre d'une crise cardiaque ou de tout autre problème cardiovasculaire. Ce programme inclut notamment des exercices physiques ainsi que des recommandations et conseils pour mener une vie plus saine.<br/>
-	 Ce programme thérapeutique sur-mesure vous aide à récupérer vos forces, de stabiliser les symptômes et à empêcher l'apparition de nouveaux problèmes cardiovasculaires plus graves.<br/>
-	 La rééducation cardiaque vous aidera à vous remettre sur pied et à vaincre toutes vos angoisses et vos craintes. Le programme vous préparera à adopter un mode de vie plus sain et de le maintenir pour longtemps.
+      description="
+      La rééducation cardiaque est conçue pour vous aider à vous rétablir après un problème cardiovasculaire ou une chirurgie cardiaque.<br/>
+Ces programme thérapeutiques vous vous aideront à retrouver vos forces, à apaiser vos douleurs et à prévenir l'apparition de nouveaux problèmes cardiovasculaires plus sérieux.<br/>
+Nos physiothérapeutes vous accompagneront durant cette période pour vous remettre rapidement sur pied et vous mettre en confiance.
+
 	 "
       image={
         <StaticImage
@@ -66,20 +80,23 @@ const IndexPage = () => (
     />
     <ServiceSpec
       title="Quels types d'exercices vous seront proposés ? "
+      description="Le programme de rééducation cardiaque vous fera pratiquer un ensemble d'exercices réguliers.
+      Parmi ses exercices proposés, on trouve :"
       data={spec}
     />
     <Section
       isImageRight
       headline="À qui s'adresse la Rééducation Cardiaque ? "
-      description="La rééducation cardiaque est destinée à tous les patients victimes de graves troubles cardiaques, tels qu'un infarctus du myocarde, une insuffisance cardiaque. Elle est également prescrite aux personnes qui ont subi un acte chirurgical au niveau du cœur.<br/>
-	  La rééducation cardiaque s'adresse aussi aux personnes souffrant d’une arythmie et d’une angine de poitrine.
-	   Les personnes ayant subi des opérations comme : un pontage cardiaque, une greffe de cœur ou de poumon, une angioplastie ou autres sont conseillés de suivre un programme de rééducation cardiaque.<br/>
-	  Ce dernier a pour but de fortifier votre cœur et ainsi de vous sentir en parfaite santé."
+      description="
+      La rééducation cardiaque est destinée à tous les patients souffrant de graves problèmes cardiovasculaires, tels qu'un infarctus du myocarde, une insuffisance cardiaque, arythmie...<br/>
+La réadaptation cardiaque est également prescrite aux personnes qui ont subi une chirurgie au niveau du cœur.<br/>
+L'objectif d'un programme de rééducation cardiaque est de renforcer votre cœur et de vous inciter à améliorer votre hygiène de vie.
+      "
       image={
         <StaticImage
           src="../assets/images/services/reeducation-cardiaque/audience.png"
           placeholder="blurred"
-          alt="Massage"
+          alt="À qui s'adresse la Rééducation Cardiaque ? "
         />
       }
     />

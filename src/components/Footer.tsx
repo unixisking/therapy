@@ -29,7 +29,7 @@ const navigation = {
     { name: "Faq", href: "/a-propos#faq" },
   ],
   services: [
-    { name: "Massothérapie", href: "/massotherapie" },
+    { name: "Massage", href: "/massage" },
     { name: "Physiothérapie", href: "/physiotherapie" },
     { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
     { name: "Rééducation Sportive ", href: "/services" },
@@ -207,7 +207,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-white pt-8">
           <p className="text-base text-grey xl:text-center">
-            &copy; 2022 Super Masseur Physiothérapie. Tous droits réservés
+            &copy; 2022 Edelweiss Physiothérapie. Tous droits réservés
           </p>
         </div>
       </div>

@@ -10,6 +10,7 @@ import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
+import { Link } from "gatsby"
 
 const spec = [
   {
@@ -42,10 +43,21 @@ const IndexPage = () => (
         alt=""
         className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
       />
-      <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
+      <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white uppercase">
           Traitement douleurs
         </h1>
+        <p className="text-base text-white mt-2">
+          Edelweiss Physio vous propose des thérapies physiques de haut niveau.
+          Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
+          une meilleure forme physique.
+        </p>
+        <Link
+          to="#reservez"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+        >
+          Prenez un rendez-vous
+        </Link>
       </div>
       <img
         src={linesImg}
@@ -56,7 +68,11 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Traitement Douleurs"
-      description="Notre physiothérapeute possède les compétences requises pour soigner les douleurs physiques que vous rencontrez actuellement. Après avoir procédé à un diagnostic minutieux, il élaborera pour vous un programme de traitement qui vous aidera non seulement à soulager les douleurs, mais aussi à identifier l'origine de celles-ci et à les traiter pour empêcher leur réapparition. La physiothérapie est la solution idéale pour les personnes atteintes de douleurs chroniques ou de blessures. Elle peut améliorer votre condition physique, faire disparaître vos douleurs et vous aider à retrouver la forme."
+      description="
+      Nos physiothérapeutes sont qualifiés pour traiter les douleurs physiques dont vous souffrez aujourd'hui.<br/>
+Après un diagnostic approfondi, nos professionnels élaboreront pour vous un programme de traitement qui non seulement soulagera les douleurs, mais qui traitera aussi la source même du problème.<br/>
+La physiothérapie est la solution idéale pour les personnes atteintes de douleurs chroniques ou de blessures. Elle peut améliorer votre condition physique et éradiquer vos douleurs.
+      "
       image={
         <StaticImage
           src="../assets/images/services/traitement-douleurs/traitement-douleurs.png"
@@ -65,14 +81,19 @@ const IndexPage = () => (
         />
       }
     />
-    <ServiceSpec title="Exercices pour traitement de douleurs" data={spec} />
+    <ServiceSpec
+      title="Exercices pour traitement de douleurs"
+      description="Nos physiothérapeutes vous proposeront une série non exhaustive d'exercices pour traiter les douleurs. Vous trouverez parmi les exercices proposés :"
+      data={spec}
+    />
     <Section
       headline="Que Traitons-nous?"
       title="Douleur bas du dos/ haut du dos"
-      description="La douleur bas du dos et la douleur haut du dos sont parmi les douleurs les plus fréquentes chez les patients.<br/>
-	  Chez Super Masseur, notre physiothérapeute attaquera la source même de votre douleur au dos afin de vous procurer un traitement approprié et efficace.<br/>
-	  Notre physiothérapeute renforcera votre thérapie en y intégrant des exercices de renforcement et une série d'étirements pour renforcer vos muscles centraux, ciblant ainsi le dos et toute la colonne vertébrale.<br/>
-	  Cela contribuera à développer votre force musculaire et à favoriser une meilleure aisance dans vos mouvements. L'objectif est aussi de prévenir de nouvelles lésions au niveau de votre colonne vertébrale.
+      description="
+      La douleur bas du dos et la douleur haut du dos sont parmi les douleurs les plus fréquentes chez les patients.<br/>
+Nos physiothérapeutes s'attaqueront d'abord à la source même de votre mal de dos afin de traiter efficacement la douleur.<br/>
+Nos spécialistes en physiothérapie vous proposeront à cet effet une série d'exercices d'étirement et de renforcement ciblant le dos et l'ensemble de la colonne vertébrale.<br/>
+Cela permettra non seulement de soulager vos douleurs et de faciliter vos mouvements, mais aussi de prévenir de nouvelles blessures.
 	  "
       image={
         <StaticImage
@@ -85,16 +106,11 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Douleur Epaule et Cou"
-      description="Les douleurs aux épaules et au cou font naître des symptômes extrêmement inconfortables
-	  et parfois même handicapants. C'est pourquoi il ne faut pas tarder à les traiter.<br/>
-	  Le physiothérapeute est le spécialiste le plus qualifié pour traiter et soigner vos douleurs aux
-	  épaules et au cou.<br/>
-	  Le traitement des douleurs aux épaules et les douleurs cervicales devraient inclure la
-	  physiothérapie manuelle. Celle-ci fait recours à des techniques destinées à minimiser la
-	  raideur et les tensions.<br/>
-	  Notre physiothérapeute vous fera également effectuer une série de mouvements spécifiques
-	  qui auront pour effet de renforcer, de faire travailler et de raffermir les muscles et les tissus
-	  de ces parties du corps.<br/>"
+      description="
+      Les douleurs aux épaules et au cou provoquent une gêne inconfortable voire handicapante. La physiothérapie est l'un des moyens les plus efficaces pour les traiter.<br/>
+Nos professionnels pratiquent la physiothérapie manuelle en employant des techniques visant à minimiser la raideur et les tensions au niveau du cou et les épaules.<br/>
+Nos physiothérapeutes vous proposent aussi une série d'exercices qui vous permettront de travailler et de renforcer les muscles et les tissus de ces parties du corps.
+      "
       image={
         <StaticImage
           src="../assets/images/services/traitement-douleurs/td-audience-2.png"
@@ -105,8 +121,10 @@ const IndexPage = () => (
     />
     <Section
       title="Douleur poignet, coude et main"
-      description="Peu importe la raison de votre douleur, qu'il s'agisse d'une blessure, d'une affection ou de toute autre pathologie, elle peut affecter fortement votre état de santé. Mais grâce à notre thérapeute physique du Super Masseur, vous allez pouvoir être très vite rétabli.
-	  Notre physiothérapeute conçoit pour vous un programme thérapeutique adapté pour traiter efficacement vos douleurs au poignet, au coude et à la main. Ainsi, vous serez en mesure de mener sans aucun encombre vos tâches quotidiennes.
+      description="
+      Nos physiothérapeutes élaboreront pour vous un programme thérapeutique visant à soigner efficacement vos douleurs au poignet, au coude et à la main. Cela vous permettra de mener à bien vos tâches quotidiennes sans aucune gêne.<br/>
+Notre équipe commencera par effectuer une évaluation complète des zones concernées, puis elle proposera la thérapie qui améliorera et renforcera vos articulations.<br/>
+Il vous sera demandé d'effectuer des exercices ciblés en conséquence.
 	  "
       image={
         <StaticImage
@@ -119,9 +137,10 @@ const IndexPage = () => (
     <Section
       isImageRight
       title="Douleur pied et cheville"
-      description="Que vous soyez atteint d'une grave lésion ou d'une pathologie chronique au niveau du pied ou de la cheville, vous pouvez vous laisser aider par notre cabinet de physiothérapie.<br/>
-	  Notre physiothérapeute vous fera passer un examen complet pour identifier la source de votre douleur. Une fois cela fait, il vous proposera un protocole de traitement sur-mesure qui tiendra compte de vos besoins particuliers.<br/>
-	  Ce traitement associe généralement un ensemble de méthodes thérapeutiques manuelles ciblées, des exercices de renforcement des muscles du pied et de la cheville ainsi que des étirements spécialisés.
+      description="
+      Notre cabinet de physiothérapie vous aidera à soigner vos blessures et vos douleurs aux pieds et aux chevilles.<br/>
+Nos physiothérapeutes effectueront un examen complet pour identifier la source de vos douleurs. Une fois cela fait, ils vous proposeront un protocole de traitement adapté qui aura pour but de faire disparaître les douleurs.<br/>
+Ce traitement associe généralement des méthodes thérapeutiques manuelles ciblées, des exercices d'étirement et de renforcement des muscles du pied et de la cheville.
 	  "
       image={
         <StaticImage
@@ -134,10 +153,10 @@ const IndexPage = () => (
     <Section
       title="Douleur Genou et Hanche"
       description="
-	  Les problèmes liés aux hanches et aux genoux risquent de compliquer considérablement votre quotidien, et encore plus si vous êtes confronté aux deux.
- Super Masseur peut vous aider à traiter le problème en profondeur, et ce, de manière sûre et efficace.
- Notre physiothérapeute inspectera vos hanches et/ou vos genoux pour y déceler toute anomalie de positionnement ou tout problème structurel, avant de vous proposer un programme de physiothérapie approprié.
- Il vous proposera un ensemble de mouvements spécifiques visant à apaiser et à faire disparaître les douleurs articulaires et à renforcer les tissus de la hanche et/ou du genou fragilisés.
+      Edelweiss Physio peut vous aider à traiter les douleurs de la hanche et du genou.<br/>
+Nos physiothérapeutes examineront vos hanches et/ou vos genoux pour y déceler une éventuelle anomalie de position ou de structure avant de vous prescrire un programme de physiothérapie adéquat.<br/>
+Ils vous soumettront à un ensemble d'exercices visant à réduire et à éliminer les douleurs et à renforcer les tissus fragilisés des hanches et/ou des genoux.
+
 	  "
       image={
         <StaticImage

@@ -5,12 +5,12 @@ import Navigation from "../components/Navigation"
 import HeaderImg from "../assets/images/services/massage/bg.png"
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
+import { Link } from "gatsby"
 
 const spec = [
   {
@@ -57,10 +57,23 @@ const IndexPage = () => (
         alt=""
         className="block absolute z-10 top-0 h-screen right-0 w-screen"
       />
-      <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
+      <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white uppercase">
           Massage
         </h1>
+        <p className="text-base text-white mt-4">
+          Notre cabinet de physiothérapie vous propose plusieurs types de
+          massages qui permettent de détendre certaines parties du corps et
+          facilitent également la récupération. Fixez un rendez-vous chez
+          Edelweiss Physio pour découvrir quelles massages vous conviennent le
+          mieux !
+        </p>
+        <Link
+          to="#reservez"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-6 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+        >
+          Prenez un rendez-vous
+        </Link>
       </div>
       <img
         src={linesImg}
@@ -70,12 +83,12 @@ const IndexPage = () => (
     <div className="-mt-12 lg:-mt-24" />
     <Section
       isImageRight
-      title="Massage Thérapeutique"
+      title="Massage"
       description="
-      Vos tissus mous et vos muscles sont très sollicités quotidiennement. Par conséquent, il est primordial de les maintenir en bonne santé et de veiller à leur bon fonctionnement. C'est pourquoi le massage est particulièrement bénéfique.<br/>
-Le massage, ou massothérapie, consiste à entreprendre une série de techniques manuelles profondes sur la peau et les muscles dans le but de favoriser le bien-être des patients et d'éliminer les tensions pouvant survenir après un effort physique ou dans la vie de tous les jours.<br/>
-Notre physiothérapeute vous propose différents types de massages, parmi lesquels figurent le massage relaxant, le massage sportif et le massage médical.
-"
+      Nos physiothérapeutes pratiquent plusieurs types de massage, dont le massage relaxant, le massage sportif et le massage médical ou thérapeutique.<br/>
+Nos professionnels effectuent une série de techniques manuelles sur la peau et sur les muscles afin de favoriser le bien-être des patients et d'éliminer les tensions qui peuvent survenir après un effort physique ou dans le quotidien.<br/>
+Comme vos muscles sont quotidiennement sollicités, le massage vous sera particulièrement bénéfique. N'hésitez pas à nous contacter pour prendre rendez-vous.
+      "
       image={
         <StaticImage
           src="../assets/images/services/massage/massage.png"
@@ -84,15 +97,19 @@ Notre physiothérapeute vous propose différents types de massages, parmi lesque
         />
       }
     />
-    <ServiceSpec title="Techniques de Massothérapie" data={spec} />
+    <ServiceSpec
+      title="Techniques de Massage"
+      description="Nos physiothérapeutes appliquent plusieurs techniques de massage pour prendre soin de leurs patients. Parmi lesquelles on trouve les suivantes :"
+      data={spec}
+    />
     <Section
-      headline="À Qui S'adressent Les Services De Massage?"
-      description="Les massages sont destinés à tout le monde, étant donné que c'est une solution très efficace pour soulager les muscles endoloris, contractés ou crispés.
-Les massages peuvent vous être très bénéfiques si vous êtes atteints de douleurs musculaires ou si vous souhaitez améliorer votre bien-être physique et mental.<br/>
-De plus, selon des études menées, le massage est efficace pour combattre le stress et les troubles de l'anxiété. Il vous aide à vous relaxer et à avoir un meilleur sommeil.<br/>
-Si vous cherchez à améliorer votre santé physique et psychologique, vous n'avez qu'à demander un rendez-vous via le formulaire à nous contacter par téléphone.
-
-"
+      headline="À Qui S'adressent Les Massages?"
+      description="
+      Le massage s'adresse à tous ceux qui veulent se détendre et soulager leurs muscles douloureux et contractés.
+Le massage serait aussi efficace pour lutter contre le stress et les troubles de l'anxiété.
+Les personnes souffrant d'insomnie peuvent recourir au massage pour mieux se détendre et améliorer leur sommeil.
+Alors, si vous souhaitez améliorer votre santé physique et psychologique, il suffit de demander un rendez-vous avec l'un de nos physiothérapeutes via le formulaire ou par téléphone.
+      "
       image={
         <StaticImage
           src="../assets/images/services/massage/target-audience.png"

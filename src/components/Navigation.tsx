@@ -30,13 +30,12 @@ const solutions = [
     href: "/physiotherapie",
     icon: RiNumber1,
   },
-  /*
   {
-    name: "Massothérapie",
+    name: "Massage",
     description:
       "Si vous cherchez à améliorer votre santé physique et psychologique.",
-    href: "/massotherapie",
-    icon: RiNumber1,
+    href: "/massage",
+    icon: RiNumber2,
   },
   {
     name: "Traitement douleurs",
@@ -52,6 +51,7 @@ const solutions = [
     href: "/reeducation-cardiaque",
     icon: RiNumber4,
   },
+  /*
   {
     name: "Réhabilitation post opératoire",
     description:

@@ -10,6 +10,7 @@ import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
+import { Link } from "gatsby"
 
 const spec = [
   {
@@ -51,6 +52,12 @@ const IndexPage = () => (
           Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
           une meilleure forme physique.
         </p>
+        <Link
+          to="#reservez"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+        >
+          Prenez un rendez-vous
+        </Link>
       </div>
       <img
         src={linesImg}
