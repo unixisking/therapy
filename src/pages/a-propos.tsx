@@ -7,11 +7,6 @@ import Button from "../components/Button"
 // import Layout from "../components/layout"
 
 import HeaderImg from "../assets/images/homepage-header-img.png"
-import OneImg from "../assets/images/one.png"
-import TwoImg from "../assets/images/two.png"
-import ThreeImg from "../assets/images/three.png"
-import FourImg from "../assets/images/four.png"
-import HealthImg from "../assets/images/health.png"
 import linesImg from "../assets/images/lines.png"
 
 import SecondaryCta from "../components/SecondaryCta"
@@ -37,6 +32,19 @@ const IndexPage = () => (
         <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
           A Propos
         </h1>
+        <p className="text-base text-white mt-4">
+          Edelweiss Physio a été créé pour offrir aux patients les meilleurs
+          traitements de physiothérapie qui soient. Nous ne cessons d'innover et
+          de perfectionner notre approche thérapeutique afin de garantir à nos
+          patients une prise en charge optimale. Découvrez ici notre cabinet de
+          physiothérapie, le responsable, notre mission et bien plus encore.
+        </p>
+        <Link
+          to="/#reservez"
+          className="mt-3 py-4 px-12 whitespace-nowrap inline-flex items-center justify-center border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+        >
+          Réservez Maintenant
+        </Link>
       </div>
       <img
         src={linesImg}
