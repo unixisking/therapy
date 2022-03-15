@@ -5,8 +5,9 @@ import {
   PhoneIcon,
 } from "@heroicons/react/outline"
 import React from "react"
+import { navigate } from "gatsby"
 
-export default function ScheduleSecton({ action }: { action?: string }) {
+export default function ScheduleSecton({ action }: { action: string }) {
   return (
     <div className="mx-auto mt-12 lg:mt-24 mb-8 lg:mb-24 px-4 sm:px-6 lg:max-w-7xl">
       <h2 className="text-3xl lg:text-4xl font-extrabold text-primary text-center">
@@ -74,8 +75,31 @@ export default function ScheduleSecton({ action }: { action?: string }) {
   )
 }
 
-const ScheduleForm = ({ action }: { action?: string }) => {
+const ScheduleForm = ({ action }: { action: string }) => {
   const url = typeof window !== "undefined" ? window.location.pathname : null
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    const data = new FormData(e.target)
+    fetch(e.target.action, {
+      method: "post",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(response => {
+        if (response.ok) {
+          //redirect
+          navigate("/merci")
+        } else {
+          console.error("form submission failed")
+        }
+      })
+      .catch(error => {
+        console.error("form submission failed", error)
+      })
+  }
   return (
     <div>
       <h2 className="lg:mb-12 text-3xl lg:text-4xl font-extrabold text-primary text-center">
@@ -83,6 +107,7 @@ const ScheduleForm = ({ action }: { action?: string }) => {
       </h2>
 
       <form
+        onSubmit={handleSubmit}
         method="POST"
         action={action}
         style={{ boxShadow: "0px 10px 40px rgba(9, 34, 124, 0.4)" }}
@@ -101,7 +126,7 @@ const ScheduleForm = ({ action }: { action?: string }) => {
               name="name"
               id="name"
               className="py-3 px-4 block w-full shadow-sm text-gray-700 border border-solid focus:ring-[#556AFE] focus:border-[#556AFE] border-gray-300 rounded-md"
-              placeholder="John Doe"
+              placeholder="Doreen Gottlieb"
             />
           </div>
         </div>
@@ -135,7 +160,7 @@ const ScheduleForm = ({ action }: { action?: string }) => {
               name="email"
               id="email"
               className="p-4 border shadow-sm focus:ring-[#556AFE] focus:border-[#556AFE] block w-full sm:text-sm border-gray-300 rounded-md"
-              placeholder="john@example.com"
+              placeholder="doreen@gmail.com"
             />
           </div>
         </div>
@@ -192,6 +217,7 @@ const ScheduleForm = ({ action }: { action?: string }) => {
             <textarea
               rows={4}
               name="message"
+              placeholder="Optionnel"
               id="message"
               className="shadow-sm p-4 border focus:ring-[#556AFE] focus:border-[#556AFE] block w-full sm:text-sm border-gray-300 rounded-md"
               defaultValue={""}
