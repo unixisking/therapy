@@ -57,11 +57,14 @@ const ContactForm = () => {
       .then(response => {
         if (response.ok) {
           //redirect
+          console.log("ok response", response)
           navigate("/merci")
+          return response.json()
         } else {
           console.error("form submission failed")
         }
       })
+      .then(data => console.log(data))
       .catch(error => {
         console.error("form submission failed", error)
       })
@@ -70,7 +73,7 @@ const ContactForm = () => {
     <form
       onSubmit={handleSubmit}
       action="https://formspree.io/f/xpzblpyr"
-      method="post"
+      method="POST"
       style={{ boxShadow: "0px 10px 40px rgba(9, 34, 124, 0.4)" }}
       className="bg-white shadow-xl py-8 px-8 mb-4 rounded-xl"
     >
@@ -88,7 +91,7 @@ const ContactForm = () => {
               name="name"
               id="name"
               className="py-3 px-4 block w-full shadow-sm text-gray-700 border border-solid focus:ring-[#556AFE] focus:border-[#556AFE] border-gray-300 rounded-md"
-              placeholder="John Doe"
+              placeholder="Doreen Gottlieb"
             />
           </div>
         </div>
@@ -122,7 +125,7 @@ const ContactForm = () => {
               name="email"
               id="email"
               className="p-4 border shadow-sm focus:ring-[#556AFE] focus:border-[#556AFE] block w-full sm:text-sm border-gray-300 rounded-md"
-              placeholder="john@example.com"
+              placeholder="doreen@gmail.com"
             />
           </div>
         </div>
