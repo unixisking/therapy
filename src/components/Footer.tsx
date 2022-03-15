@@ -32,7 +32,7 @@ const navigation = {
     { name: "Massage", href: "/massage" },
     { name: "Physiothérapie", href: "/physiotherapie" },
     { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
-    { name: "Rééducation Sportive ", href: "/services" },
+    { name: "Rééducation Sportive ", href: "/reeducation-sportive" },
     {
       name: "Réhabilitation préopératoire",
       href: "/rehabilitation-preoperatoire",

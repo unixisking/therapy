@@ -18,6 +18,7 @@ import {
   RiNumber4,
   RiNumber5,
   RiNumber6,
+  RiNumber7,
 } from "react-icons/ri"
 
 import { Link as GatsbyLink } from "gatsby"
@@ -65,6 +66,13 @@ const solutions = [
       "Elle aide également à prévenir les complications qui pourraient survenir après une opération.",
     href: "/rehabilitation-post-operatoire",
     icon: RiNumber6,
+  },
+  {
+    name: "Rééducation Sportive",
+    description:
+      "La rééducation sportive comme thérapie constitue une excellente solution pour récupérer la forme.",
+    href: "/reeducation-sportive",
+    icon: RiNumber7,
   },
 ]
 const callsToAction = [

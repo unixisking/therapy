@@ -73,7 +73,7 @@ La rééducation préopératoire stimule votre mémoire musculaire afin que vos 
         <StaticImage
           src="../assets/images/services/rehabilitation-preoperatoire/rehabilitation-preoperatoire.png"
           placeholder="blurred"
-          alt="Réhabilitation post opératoire"
+          alt="Réhabilitation préopératoire"
         />
       }
     />
