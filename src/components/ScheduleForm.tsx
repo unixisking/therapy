@@ -42,7 +42,9 @@ export default function ScheduleSecton({ action }: { action: string }) {
                 className="flex items-center text-base text-grey font-bold"
               >
                 <MailIcon className="w-8 h-8 mr-4 text-[#FF7F22]" />
-                <p className="text-base text-grey">contact@super-masseur.ch</p>
+                <p className="text-base text-grey">
+                  contact@edelweiss-physio.ch
+                </p>
               </a>
               <div className="flex items-center">
                 <MapIcon className="w-8 h-8 mr-4 text-[#FF7F22]" />

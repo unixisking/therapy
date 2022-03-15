@@ -45,7 +45,7 @@ const navigation = {
   ],
   legal: [
     { name: "Chemin du viaduc 12, 1008 Prilly , Swisse", href: "/" },
-    { name: "+41 788 30 31 39", href: "tel:+41792322074" },
+    { name: "+41 79 232 20 74", href: "tel:+41792322074" },
     {
       name: "contact@edelweiss-physio.ch",
       href: "mailto:contact@edelweiss-physio.ch",

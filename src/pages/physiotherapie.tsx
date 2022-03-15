@@ -48,7 +48,7 @@ const IndexPage = () => (
           Physiotherapie Prilly-MALLEY
         </h1>
         <p className="text-base text-white mt-4">
-          Edelweiss Physio vous propose des thérapies physiques de haut niveau.
+          Edelweiss Physio vous propose des traitement de physiotherapie.
           Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
           une meilleure forme physique.
         </p>
@@ -67,7 +67,7 @@ const IndexPage = () => (
     <div className="-mt-12 lg:-mt-24" />
     <Section
       isImageRight
-      title="Physiothérapie"
+      title="Notre approche de la physiothérapie"
       description="
       Nos physiothérapeutes mettent leurs compétences et leur savoir-faire à votre disposition pour non seulement accélérer la guérison de vos blessures et éliminer vos douleurs, mais aussi pour empêcher la survenue de problèmes physiques plus graves.<br/>
 Nos physiothérapeutes arrivent à identifier les parties corporelles affectées et à concevoir des traitements appropriés.
@@ -90,7 +90,7 @@ Ainsi, nos patients peuvent renforcer leurs articulations et muscles, développe
       isImageRight
       headline="À qui est destinée la physiothérapie ?"
       description="
-      La physiothérapie est destinée aux personnes souffrant de douleurs les empêchant d'accomplir leurs activités journalières habituelles. Elle s'adresse également aux personnes voulant simplement améliorer leurs capacités physiques et prévenir les blessures grâce à nos différents programmes de renforcement musculaire. Si vous souhaitez demander une consultation avec l'un de nos experts, il se fera un plaisir de vous proposer la meilleure thérapie pour vous.
+      La physiothérapie est destinée aux personnes souffrant de douleurs les empêchant d'accomplir leurs activités journalières habituelles. Elle s'adresse également aux personnes voulant simplement améliorer leurs capacités physiques et prévenir les blessures. Nous vous proposons différents programmes de renforcement musculaire. Si vous souhaitez demander une consultation avec l'un de nos experts, il se fera un plaisir de vous proposer la meilleure thérapie pour vous.
       "
       image={
         <StaticImage
