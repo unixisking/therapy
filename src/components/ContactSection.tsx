@@ -4,6 +4,7 @@ import {
   MapIcon,
   PhoneIcon,
 } from "@heroicons/react/outline"
+import { navigate } from "gatsby"
 import React from "react"
 
 export default function ContactSection() {
@@ -43,8 +44,33 @@ export default function ContactSection() {
 }
 
 const ContactForm = () => {
+  const handleSubmit = e => {
+    e.preventDefault()
+    const data = new FormData(e.target)
+    fetch(e.target.action, {
+      method: "post",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(response => {
+        if (response.ok) {
+          //redirect
+          navigate("/merci")
+        } else {
+          console.error("form submission failed")
+        }
+      })
+      .catch(error => {
+        console.error("form submission failed", error)
+      })
+  }
   return (
     <form
+      onSubmit={handleSubmit}
+      action="https://formspree.io/f/xpzblpyr"
+      method="post"
       style={{ boxShadow: "0px 10px 40px rgba(9, 34, 124, 0.4)" }}
       className="bg-white shadow-xl py-8 px-8 mb-4 rounded-xl"
     >
@@ -112,8 +138,8 @@ const ContactForm = () => {
               rows={4}
               name="message"
               id="message"
+              placeholder="Optionnel"
               className="shadow-sm p-4 border focus:ring-[#556AFE] focus:border-[#556AFE] block w-full sm:text-sm border-gray-300 rounded-md"
-              defaultValue={""}
             />
           </div>
         </div>
