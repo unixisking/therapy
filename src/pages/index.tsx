@@ -85,7 +85,7 @@ const IndexPage = () => (
     </div>
     <Services />
 
-    <ScheduleSecton />
+    <ScheduleSecton action="https://formspree.io/f/xrgjlplj" />
     {/* <div className="mt-24 lg:mt-32 max-w-xl px-4 sm:px-6 lg:max-w-7xl mx-auto grid grid-col-1 lg:grid-cols-3 gap-12">
       <div className="lg:col-span-2 space-y-4 lg:max-w-2xl">
         <h2 className="text-3xl font-extrabold text-primary">

@@ -6,7 +6,7 @@ import {
 } from "@heroicons/react/outline"
 import React from "react"
 
-export default function ScheduleSecton() {
+export default function ScheduleSecton({ action }: { action?: string }) {
   return (
     <div className="mx-auto mt-12 lg:mt-24 mb-8 lg:mb-24 px-4 sm:px-6 lg:max-w-7xl">
       <h2 className="text-3xl lg:text-4xl font-extrabold text-primary text-center">
@@ -68,13 +68,13 @@ export default function ScheduleSecton() {
             </div>
           </div>
         </div>
-        <ScheduleForm />
+        <ScheduleForm action={action} />
       </div>
     </div>
   )
 }
 
-const ScheduleForm = () => {
+const ScheduleForm = ({ action }: { action?: string }) => {
   const url = typeof window !== "undefined" ? window.location.pathname : null
   return (
     <div>
@@ -83,6 +83,8 @@ const ScheduleForm = () => {
       </h2>
 
       <form
+        method="POST"
+        action={action}
         style={{ boxShadow: "0px 10px 40px rgba(9, 34, 124, 0.4)" }}
         className="bg-white shadow-xl space-y-4 py-8 px-8 mb-4 rounded-xl"
       >
