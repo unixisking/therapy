@@ -6,7 +6,7 @@ import Icon3 from "../assets/icons/solid-experience.svg"
 
 const features = [
   {
-    name: "Traitement et soulagement de douleursj",
+    name: "Traitement et soulagement de douleurs",
     description:
       "Notre physiothérapeute est en mesure de traiter et soulager vos douleurs en appliquant les techniques de physiothérapie les plus avancées.",
 

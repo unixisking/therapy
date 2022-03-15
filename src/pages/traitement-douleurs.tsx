@@ -4,7 +4,6 @@ import Navigation from "../components/Navigation"
 import HeaderImg from "../assets/images/services/traitement-douleurs/bg.png"
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
