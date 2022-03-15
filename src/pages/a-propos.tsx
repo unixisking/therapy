@@ -43,12 +43,9 @@ const IndexPage = () => (
         className="absolute hidden lg:block lg:-bottom-96 w-full"
       />
     </div>
-    <div className="mt-12 lg:mt-24 max-w-xl px-4 sm:px-6 lg:max-w-7xl mx-auto grid grid-col-1 lg:grid-cols-3 gap-24">
-      <div className="lg:col-span-1 space-y-4 lg:max-w-2xl">
-        <h2 className="text-3xl font-extrabold text-primary">
-          Notre cabinet de physiothérapie à Prilly
-        </h2>
-        <p className="text-base text-grey">
+    <Section
+      title="Notre cabinet de physiothérapie à Prilly"
+      description="
           Edelweiss Physio est un cabinet de physiothérapie dont la principale
           mission est de faire bénéficier les personnes atteintes de pathologies
           perturbant leurs mouvements, leurs capacités physiques, et leur santé
@@ -58,13 +55,19 @@ const IndexPage = () => (
           disposition des équipements performants, ainsi que des techniques
           thérapeutiques efficaces, afin que chaque patient ait droit à une
           prise en charge professionnelle et de qualité.
-        </p>
-      </div>
-      <div className="col-span-2 space-y-4">
-        <h2 className="text-3xl font-extrabold text-primary">
-          Notre objectif ? : être présent pour vous !
-        </h2>
-        <p className="text-base text-grey max-w-2xl">
+      "
+      image={
+        <StaticImage
+          src="../assets/images/cabinet.png"
+          placeholder="blurred"
+          alt="Notre cabinet de physiothérapie à Prilly"
+        />
+      }
+    />
+    <Section
+      isImageRight
+      title="Notre objectif ? : être présent pour vous !"
+      description="
           La principale préoccupation de nos physiothérapeutes est d’améliorer
           votre bien-être et votre santé physique.
           <br />
@@ -76,9 +79,15 @@ const IndexPage = () => (
           compréhension, persévérance et par-dessus tout, ils sont passionnés
           par leur travail. Envie d'en connaître davantage sur nos thérapies et
           traitements ? N'hésitez pas à nous contacter.
-        </p>
-      </div>
-    </div>
+      "
+      image={
+        <StaticImage
+          src="../assets/images/objectif.png"
+          placeholder="blurred"
+          alt="Notre objectif ? : être présent pour vous !"
+        />
+      }
+    />
     <Bio />
     <Faq />
     {/* <img
