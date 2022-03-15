@@ -37,7 +37,7 @@ export default function ScheduleSecton() {
                 <p className="text-base text-grey">+41 79 232 20 74</p>
               </a>
               <a
-                href="mailto:contact@super-masseur.ch"
+                href="mailto:contact@edelweiss-physio.ch"
                 className="flex items-center text-base text-grey font-bold"
               >
                 <MailIcon className="w-8 h-8 mr-4 text-[#FF7F22]" />

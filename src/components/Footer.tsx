@@ -33,7 +33,10 @@ const navigation = {
     { name: "Physiothérapie", href: "/physiotherapie" },
     { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
     { name: "Rééducation Sportive ", href: "/services" },
-    { name: "Réhabilitation préopératoire", href: "/services" },
+    {
+      name: "Réhabilitation préopératoire",
+      href: "/rehabilitation-preoperatoire",
+    },
     {
       name: "Réhabilitation postopératoire",
       href: "/rehabilitation-post-operatoire",
@@ -44,8 +47,8 @@ const navigation = {
     { name: "Chemin du viaduc 12, 1008 Prilly , Swisse", href: "/" },
     { name: "+41 788 30 31 39", href: "tel:+41792322074" },
     {
-      name: "contact@physiontherapy.com",
-      href: "mailto:info@physiontherapy.com",
+      name: "contact@edelweiss-physio.ch",
+      href: "mailto:contact@edelweiss-physio.ch",
     },
   ],
   social: [

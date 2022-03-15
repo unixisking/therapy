@@ -17,6 +17,7 @@ import {
   RiNumber3,
   RiNumber4,
   RiNumber5,
+  RiNumber6,
 } from "react-icons/ri"
 
 import { Link as GatsbyLink } from "gatsby"
@@ -40,7 +41,7 @@ const solutions = [
   {
     name: "Traitement douleurs",
     description:
-      "Chez Super Masseur, notre physiothérapeute attaquera la source même de votre douleur au dos afin de vous procurer un traitement approprié et efficace.",
+      "Notre physiothérapeute attaquera la source même de votre douleur au dos afin de vous procurer un traitement approprié et efficace.",
     href: "/traitement-douleurs",
     icon: RiNumber3,
   },
@@ -52,17 +53,24 @@ const solutions = [
     icon: RiNumber4,
   },
   {
+    name: "Réhabilitation préopératoire",
+    description:
+      "un programme de réhabilitation préopératoire qui vous permet de vous préparer non seulement sur le plan physique/psychologique.",
+    href: "/rehabilitation-preoperatoire",
+    icon: RiNumber5,
+  },
+  {
     name: "Réhabilitation post opératoire",
     description:
       "Elle aide également à prévenir les complications qui pourraient survenir après une opération.",
     href: "/rehabilitation-post-operatoire",
-    icon: RiNumber5,
+    icon: RiNumber6,
   },
 ]
 const callsToAction = [
   {
     name: "Email us",
-    href: "mailto:contact@super-masseur.com",
+    href: "mailto:contact@edelweiss-physio.ch",
     icon: MailIcon,
   },
   { name: "+41 79 232 20 74", href: "tel:+41792322074", icon: PhoneIcon },
