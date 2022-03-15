@@ -80,6 +80,8 @@ Ainsi, nos patients peuvent renforcer leurs articulations et muscles, développe
           alt="Physiotherapie"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <ServiceSpec
       title="Techniques de physiothérapie"
@@ -99,6 +101,8 @@ Ainsi, nos patients peuvent renforcer leurs articulations et muscles, développe
           alt="Massage"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <ScheduleSecton action="https://formspree.io/f/xoqrlenw" />
     <SecondaryCta />

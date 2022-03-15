@@ -11,6 +11,7 @@ interface ISection {
   to?: string
   isImageRight?: boolean
   image: ReactNode
+  buttonText?: string
 }
 
 export default function Section(props: ISection) {
@@ -48,7 +49,7 @@ export default function Section(props: ISection) {
               )}
               {props.to && (
                 <Button to={props.to} size="large">
-                  En savoir plus
+                  {props.buttonText ? props.buttonText : "En savoir plus"}
                 </Button>
               )}
             </div>
@@ -83,7 +84,7 @@ export default function Section(props: ISection) {
               )}
               {props.to && (
                 <Button to={props.to} size="large">
-                  En savoir plus
+                  {props.buttonText ? props.buttonText : "En savoir plus"}
                 </Button>
               )}
             </div>
