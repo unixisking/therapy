@@ -211,7 +211,7 @@ export default function Navigation() {
               </div>
             </div>
             <div className="py-6 px-5 space-y-6">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
+              <div className="flex flex-col space-y-4">
                 <GatsbyLink
                   to="/"
                   className="text-base text-grey hover:font-medium"
@@ -225,18 +225,22 @@ export default function Navigation() {
                 >
                   Services
                 </GatsbyLink>
+                <div className="flex flex-col ml-2">
+                  {solutions.map(x => (
+                    <GatsbyLink
+                      to={x.href}
+                      className="text-base text-grey hover:font-medium py-2"
+                    >
+                      {x.name}
+                    </GatsbyLink>
+                  ))}
+                </div>
 
                 <GatsbyLink
                   to="/a-propos"
                   className="text-base text-grey hover:font-medium"
                 >
                   A Propos
-                </GatsbyLink>
-                <GatsbyLink
-                  to="/contact"
-                  className="text-base text-grey hover:font-medium"
-                >
-                  Contactez-nous
                 </GatsbyLink>
               </div>
               <div>
