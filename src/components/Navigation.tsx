@@ -251,12 +251,12 @@ export default function Navigation() {
                 </div>
 
                 <p className="mt-6 text-center text-base text-gray-500">
-                  Feel free to{" "}
+                  N'hésitez pas à nous{" "}
                   <GatsbyLink
                     to="/contact"
                     className="text-indigo-600 hover:text-primary"
                   >
-                    contact us here
+                    contacter
                   </GatsbyLink>
                 </p>
               </div>
