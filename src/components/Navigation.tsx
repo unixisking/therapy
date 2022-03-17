@@ -29,7 +29,7 @@ const solutions = [
     name: "Physiothérapie",
     description:
       "Si vous souhaitez vous sentir mieux niveau santé, plus fort et plus actif, nous sommes là pour s'occuper de vous.",
-    href: "/physiotherapie",
+    href: "/physiotherapeute-prilly-malley",
     icon: RiNumber1,
   },
   {

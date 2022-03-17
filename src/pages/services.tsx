@@ -54,7 +54,7 @@ const IndexPage = () => (
         "L'électrothérapie.",
         "Des étirements sous toutes leurs formes, ... Et bien d'autres techniques.",
       ]}
-      to="/services/physiotherapie"
+      to="/physiotherapeute-prilly-malley"
       image={
         <StaticImage
           src="../assets/images/service-images/physio.png"
@@ -75,7 +75,7 @@ const IndexPage = () => (
         "Douleur pied et cheville",
         "Douleur Genou et Hanche ainsi que de nombreux autres maux.",
       ]}
-      to="/services/traitement-de-la-douleur"
+      to="/traitement-de-la-douleur"
       image={
         <StaticImage
           src="../assets/images/service-images/traitement-douleur.png"
@@ -92,7 +92,7 @@ const IndexPage = () => (
         "Massage sportif pour décontracter et assouplir les muscles des sportifs et accroître leurs capacités.",
         "Massage médical pour récupérer d'une blessure ou d'une intervention chirurgicale.",
       ]}
-      to=""
+      to="/massage"
       image={
         <StaticImage
           src="../assets/images/service-images/massage.png"
@@ -112,7 +112,7 @@ const IndexPage = () => (
         "Prévenir des futures blessures.",
         "Améliorer les performances sportives.",
       ]}
-      to=""
+      to="/reeducation-sportive"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-sportive.png"
@@ -131,7 +131,7 @@ const IndexPage = () => (
         "Atténuation des douleurs et des gonflements.",
         'Développer votre "mémoire musculaire" relative à certains mouvements.',
       ]}
-      to=""
+      to="/rehabilitation-preoperatoire"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-prechirurgicale.png"
@@ -151,7 +151,7 @@ const IndexPage = () => (
         "Accélérer le processus de récupération.",
         "Minimiser d'éventuelles complications suite à une intervention chirurgicale, notamment les infections, les hémorragies, les coagulations sanguines, et d'autres problèmes susceptibles de nuire à votre santé.",
       ]}
-      to=""
+      to="/rehabilitation-post-operatoire"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-postchirurgicale.png"
@@ -170,7 +170,7 @@ const IndexPage = () => (
         "Soulager son anxiété et atténuer son stress.",
         "Prévenir la survenue de pathologies et de déficiences cardiaques notamment chez les personnes âgées.",
       ]}
-      to=""
+      to="/reeeducation-cardiaque"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-cardiaque.png"
