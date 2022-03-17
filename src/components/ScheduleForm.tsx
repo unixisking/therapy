@@ -23,11 +23,11 @@ export default function ScheduleSecton({ action }: { action: string }) {
               Contact Info
             </h2>
 
-            <h3 className="text-2xl lg:text-3xl font-extrabold text-primary">
+            <h3 className="text-2xl font-extrabold text-grey">
               Réservez une séance maintenant
             </h3>
             <div className="space-y-4">
-              <h3 className="text-2xl lg:text-3xl font-extrabold text-primary mb-4">
+              <h3 className="text-2xl font-extrabold text-grey mb-4">
                 Nous sommes joignable par
               </h3>
               <a
@@ -172,7 +172,7 @@ const ScheduleForm = ({ action }: { action: string }) => {
               htmlFor="service"
               className="block text-sm font-medium text-gray-700"
             >
-              Choose a service or a treatment
+              Dates et horaires souhaités
             </label>
             <select
               id="service"
