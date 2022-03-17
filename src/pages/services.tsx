@@ -92,7 +92,7 @@ const IndexPage = () => (
         "Massage sportif pour décontracter et assouplir les muscles des sportifs et accroître leurs capacités.",
         "Massage médical pour récupérer d'une blessure ou d'une intervention chirurgicale.",
       ]}
-      to="/massage"
+      to="/massage-prilly-malley"
       image={
         <StaticImage
           src="../assets/images/service-images/massage.png"

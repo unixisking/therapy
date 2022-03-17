@@ -36,7 +36,7 @@ const solutions = [
     name: "Massage",
     description:
       "Si vous cherchez à améliorer votre santé physique et psychologique.",
-    href: "/massage",
+    href: "/massage-prilly-malley",
     icon: RiNumber2,
   },
   {
@@ -131,7 +131,13 @@ export default function Navigation() {
               src="../assets/images/logo-white.png"
               alt="logo"
               placeholder="blurred"
-              className="w-56 -ml-4 h-auto"
+              className="hidden sm:block w-56 -ml-4 h-auto"
+            />
+            <StaticImage
+              src="../assets/images/logo.png"
+              alt="logo"
+              placeholder="blurred"
+              className="sm:hidden w-56 -ml-4 h-auto"
             />
           </GatsbyLink>
           <div className="-mr-2 -my-2 md:hidden">

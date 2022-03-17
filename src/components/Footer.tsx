@@ -29,7 +29,7 @@ const navigation = {
     { name: "Faq", href: "/a-propos#faq" },
   ],
   services: [
-    { name: "Massage", href: "/massage" },
+    { name: "Massage", href: "/massage-prilly-malley" },
     { name: "Physiothérapie", href: "/physiotherapeute-prilly-malley" },
     { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
     { name: "Rééducation Sportive ", href: "/reeducation-sportive" },
