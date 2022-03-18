@@ -127,18 +127,22 @@ export default function Navigation() {
       <div className="max-w-7xl px-4 sm:px-12 mx-auto">
         <div className="flex justify-between items-center md:justify-start md:space-x-48 mt-4 mx-auto">
           <GatsbyLink to="/" className="text-2xl lg:text-3xl text-white">
-            <StaticImage
-              src="../assets/images/logo-white.png"
-              alt="logo"
-              placeholder="blurred"
-              className="hidden md:block w-56 -ml-4 h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logo.png"
-              alt="logo"
-              placeholder="blurred"
-              className="md:hidden w-56 -ml-4 h-auto"
-            />
+            <div className="hidden md:block">
+              <StaticImage
+                src="../assets/images/logo-white.png"
+                alt="logo"
+                placeholder="blurred"
+                className=" w-56 -ml-4 h-auto"
+              />
+            </div>
+            <div className="md:hidden">
+              <StaticImage
+                src="../assets/images/logo.png"
+                alt="logo"
+                placeholder="blurred"
+                className=" w-56 -ml-4 h-auto"
+              />
+            </div>
           </GatsbyLink>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
