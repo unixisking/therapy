@@ -43,35 +43,35 @@ const solutions = [
     name: "Traitement douleurs",
     description:
       "Notre physiothérapeute attaquera la source même de votre douleur au dos afin de vous procurer un traitement approprié et efficace.",
-    href: "/traitement-douleurs",
+    href: "/traitement-douleurs-prilly-malley",
     icon: RiNumber3,
   },
   {
     name: "Rééducation Cardiaque",
     description:
       "La rééducation cardiaque est destinée à tous les patients victimes de graves troubles cardiaques, tels qu'un infarctus du myocarde, une insuffisance cardiaque.",
-    href: "/reeducation-cardiaque",
+    href: "/reeducation-cardiaque-prilly-malley",
     icon: RiNumber4,
   },
   {
     name: "Réhabilitation préopératoire",
     description:
       "un programme de réhabilitation préopératoire qui vous permet de vous préparer non seulement sur le plan physique/psychologique.",
-    href: "/rehabilitation-preoperatoire",
+    href: "/rehabilitation-preoperatoire-prilly-malley",
     icon: RiNumber5,
   },
   {
     name: "Réhabilitation post opératoire",
     description:
       "Elle aide également à prévenir les complications qui pourraient survenir après une opération.",
-    href: "/rehabilitation-post-operatoire",
+    href: "/rehabilitation-post-operatoire-prilly-malley",
     icon: RiNumber6,
   },
   {
     name: "Rééducation Sportive",
     description:
       "La rééducation sportive comme thérapie constitue une excellente solution pour récupérer la forme.",
-    href: "/reeducation-sportive",
+    href: "/reeducation-sportive-prilly-malley",
     icon: RiNumber7,
   },
 ]

@@ -75,7 +75,7 @@ const IndexPage = () => (
         "Douleur pied et cheville",
         "Douleur Genou et Hanche ainsi que de nombreux autres maux.",
       ]}
-      to="/traitement-de-la-douleur"
+      to="/traitement-de-la-douleur-prilly-malley"
       image={
         <StaticImage
           src="../assets/images/service-images/traitement-douleur.png"
@@ -112,7 +112,7 @@ const IndexPage = () => (
         "Prévenir des futures blessures.",
         "Améliorer les performances sportives.",
       ]}
-      to="/reeducation-sportive"
+      to="/reeducation-sportive-prilly-malley"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-sportive.png"
@@ -131,7 +131,7 @@ const IndexPage = () => (
         "Atténuation des douleurs et des gonflements.",
         'Développer votre "mémoire musculaire" relative à certains mouvements.',
       ]}
-      to="/rehabilitation-preoperatoire"
+      to="/rehabilitation-preoperatoire-prilly-malley"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-prechirurgicale.png"
@@ -151,7 +151,7 @@ const IndexPage = () => (
         "Accélérer le processus de récupération.",
         "Minimiser d'éventuelles complications suite à une intervention chirurgicale, notamment les infections, les hémorragies, les coagulations sanguines, et d'autres problèmes susceptibles de nuire à votre santé.",
       ]}
-      to="/rehabilitation-post-operatoire"
+      to="/rehabilitation-post-operatoire-prilly-malley"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-postchirurgicale.png"
@@ -170,7 +170,7 @@ const IndexPage = () => (
         "Soulager son anxiété et atténuer son stress.",
         "Prévenir la survenue de pathologies et de déficiences cardiaques notamment chez les personnes âgées.",
       ]}
-      to="/reeeducation-cardiaque"
+      to="/reeducation-cardiaque-prilly-malley"
       image={
         <StaticImage
           src="../assets/images/service-images/reeducation-cardiaque.png"

@@ -31,17 +31,26 @@ const navigation = {
   services: [
     { name: "Massage", href: "/massage-prilly-malley" },
     { name: "Physiothérapie", href: "/physiotherapeute-prilly-malley" },
-    { name: "Traitement De La Douleur", href: "/traitement-douleurs" },
-    { name: "Rééducation Sportive ", href: "/reeducation-sportive" },
+    {
+      name: "Traitement De La Douleur",
+      href: "/traitement-douleurs-prilly-malley",
+    },
+    {
+      name: "Rééducation Sportive ",
+      href: "/reeducation-sportive-prilly-malley",
+    },
     {
       name: "Réhabilitation préopératoire",
-      href: "/rehabilitation-preoperatoire",
+      href: "/rehabilitation-preoperatoire-prilly-malley",
     },
     {
       name: "Réhabilitation postopératoire",
-      href: "/rehabilitation-post-operatoire",
+      href: "/rehabilitation-post-operatoire-prilly-malley",
     },
-    { name: "Rééducation cardiaque", href: "/reeducation-cardiaque" },
+    {
+      name: "Rééducation cardiaque",
+      href: "/reeducation-cardiaque-prilly-malley",
+    },
   ],
   legal: [
     { name: "Chemin du viaduc 12, 1008 Prilly , Swisse", href: "/" },
