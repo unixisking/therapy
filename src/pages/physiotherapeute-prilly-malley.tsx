@@ -41,20 +41,20 @@ const IndexPage = () => (
         id="bg-image"
         src={HeaderImg}
         alt=""
-        className="hidden sm:block sm:absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
+        className="hidden md:block sm:absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold text-primary sm:text-white">
+        <h1 className="text-4xl 2xl:text-6xl font-bold text-primary md:text-white">
           Physiotherapie Prilly-MALLEY
         </h1>
-        <p className="text-base text-grey sm:text-white mt-4">
+        <p className="text-base text-grey md:text-white mt-4">
           Edelweiss Physio vous propose des traitement de physiotherapie.
           Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
           une meilleure forme physique.
         </p>
         <Link
           to="#reservez"
-          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border sm:border-white shadow-sm text-base font-medium text-white sm:background-transparent bg-gradient-to-r from-primary to-secondary rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border md:border-white shadow-sm text-base font-medium text-white bg-gradient-to-r from-primary to-secondary md:from-transparent md:to-transparent rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
           Réservez Maintenant
         </Link>

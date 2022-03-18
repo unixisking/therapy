@@ -4,7 +4,6 @@ import Navigation from "../components/Navigation"
 import HeaderImg from "../assets/images/homepage-header-img.png"
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import ContactSection from "../components/ContactSection"
 
@@ -18,12 +17,17 @@ const IndexPage = () => (
         id="bg-image"
         src={HeaderImg}
         alt=""
-        className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
+        className="hidden md:block sm:absolute z-10 top-0 h-screen right-0 w-screen"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
-          Contactez Nous
+        <h1 className="text-4xl 2xl:text-6xl font-bold text-primary md:text-white">
+          Prenez contact avec nous
         </h1>
+        <p className="text-base text-grey md:text-white mt-4">
+          Notre cabinet de physiothérapie Edelweiss Physio fera un plaisir de
+          vous renseigner sur toutes les questions ou préoccupations relatives à
+          nos services de physiothérapie, notre disponibilité et nos honoraires.
+        </p>
       </div>
       <img
         src={linesImg}

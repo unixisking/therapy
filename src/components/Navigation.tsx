@@ -131,13 +131,13 @@ export default function Navigation() {
               src="../assets/images/logo-white.png"
               alt="logo"
               placeholder="blurred"
-              className="hidden sm:block w-56 -ml-4 h-auto"
+              className="hidden md:block w-56 -ml-4 h-auto"
             />
             <StaticImage
               src="../assets/images/logo.png"
               alt="logo"
               placeholder="blurred"
-              className="sm:hidden w-56 -ml-4 h-auto"
+              className="md:hidden w-56 -ml-4 h-auto"
             />
           </GatsbyLink>
           <div className="-mr-2 -my-2 md:hidden">

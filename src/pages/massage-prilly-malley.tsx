@@ -43,25 +43,23 @@ const IndexPage = () => (
   <div className="relative">
     {/* <SEO title="Home" /> */}
     <div
-      style={{
-        background: `url(${HeaderImg}) no-repeat center center / cover`,
-      }}
+      // style={{
+      //   background: `url(${HeaderImg}) no-repeat center center / cover`,
+      // }}
       className="relative h-75v lg:h-screen"
     >
       <Navigation />
-      <StaticImage
-        layout="fullWidth"
-        placeholder="none"
+      <img
         id="bg-image"
-        src="../assets/images/services/massage/bg.png"
+        src={HeaderImg}
         alt=""
-        className="block absolute z-10 top-0 h-screen right-0 w-screen"
+        className="hidden md:block sm:absolute z-10 top-0 h-screen right-0 w-screen"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
+        <h1 className="text-4xl 2xl:text-6xl font-bold text-primary md:text-white">
           Massage
         </h1>
-        <p className="text-base text-white mt-4">
+        <p className="text-base text-grey md:text-white mt-4">
           Notre cabinet de physiothérapie vous propose plusieurs types de
           massages qui permettent de détendre certaines parties du corps et
           facilitent également la récupération. Fixez un rendez-vous chez
@@ -70,7 +68,7 @@ const IndexPage = () => (
         </p>
         <Link
           to="#reservez"
-          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-6 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border md:border-white shadow-sm text-base font-medium text-white bg-gradient-to-r from-primary to-secondary md:from-transparent md:to-transparent rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
           Réservez Maintenant
         </Link>
@@ -96,6 +94,8 @@ Comme vos muscles sont quotidiennement sollicités, le massage vous sera particu
           alt="Massage Thérapeutique"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <ServiceSpec
       title="Techniques de Massage"
@@ -117,6 +117,8 @@ Alors, si vous souhaitez améliorer votre santé physique et psychologique, il s
           alt="Massage"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <ScheduleSecton action="https://formspree.io/f/mwkyqlnr" />
     <iframe

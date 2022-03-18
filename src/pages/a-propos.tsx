@@ -26,13 +26,13 @@ const IndexPage = () => (
         id="bg-image"
         src={HeaderImg}
         alt=""
-        className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
+        className="hidden md:block sm:absolute z-10 top-0 h-screen right-0 w-screen"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-64 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
+        <h1 className="text-4xl 2xl:text-6xl font-bold text-primary md:text-white">
           A Propos
         </h1>
-        <p className="text-base text-white mt-4">
+        <p className="text-base text-grey md:text-white mt-4">
           Edelweiss Physio a été créé pour offrir aux patients les meilleurs
           traitements de physiothérapie qui soient. Nous ne cessons d'innover et
           de perfectionner notre approche thérapeutique afin de garantir à nos
@@ -41,7 +41,7 @@ const IndexPage = () => (
         </p>
         <Link
           to="/#reservez"
-          className="mt-3 py-4 px-12 whitespace-nowrap inline-flex items-center justify-center border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border md:border-white shadow-sm text-base font-medium text-white bg-gradient-to-r from-primary to-secondary md:from-transparent md:to-transparent rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
           Réservez Maintenant
         </Link>

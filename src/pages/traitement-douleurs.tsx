@@ -40,20 +40,20 @@ const IndexPage = () => (
         id="bg-image"
         src={HeaderImg}
         alt=""
-        className="block absolute z-10 top-0 h-screen right-0 w-screen object-cover blur-sm"
+        className="hidden md:block sm:absolute z-10 top-0 h-screen right-0 w-screen"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
-        <h1 className="text-4xl lg:text-6xl font-bold lg:mt-2 text-white">
+        <h1 className="text-4xl 2xl:text-6xl font-bold text-primary md:text-white">
           Traitement douleurs
         </h1>
-        <p className="text-base text-white mt-4">
+        <p className="text-base text-grey md:text-white mt-4">
           Edelweiss Physio vous propose des thérapies physiques de haut niveau.
           Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
           une meilleure forme physique.
         </p>
         <Link
           to="#reservez"
-          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-4 border border-white shadow-sm text-base font-medium text-white background-transparent  rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
+          className="py-4 px-12 whitespace-nowrap inline-flex items-center justify-center mt-2 border md:border-white shadow-sm text-base font-medium text-white bg-gradient-to-r from-primary to-secondary md:from-transparent md:to-transparent rounded-lg drop-shadow-lg focus:outline-none focus:shadow-outline hover:scale-110 ease-in duration-300"
         >
           Réservez Maintenant
         </Link>
@@ -79,6 +79,8 @@ La physiothérapie est la solution idéale pour les personnes atteintes de doule
           alt="Traitement Douleurs"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <ServiceSpec
       title="Exercices pour traitement de douleurs"
@@ -101,6 +103,8 @@ Cela permettra non seulement de soulager vos douleurs et de faciliter vos mouvem
           alt="Douleur bas du dos/ haut du dos"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <Section
       isImageRight
@@ -117,6 +121,8 @@ Nos physiothérapeutes vous proposent aussi une série d'exercices qui vous perm
           alt="Douleur Epaule et Cou"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <Section
       title="Douleur poignet, coude et main"
@@ -132,6 +138,8 @@ Il vous sera demandé d'effectuer des exercices ciblés en conséquence.
           alt="Douleur poignet, coude et main"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <Section
       isImageRight
@@ -148,6 +156,8 @@ Ce traitement associe généralement des méthodes thérapeutiques manuelles cib
           alt="Douleur pied et cheville"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <Section
       title="Douleur Genou et Hanche"
@@ -164,6 +174,8 @@ Ils vous soumettront à un ensemble d'exercices visant à réduire et à élimin
           alt="Douleur Genou et Hanche"
         />
       }
+      to="#reservez"
+      buttonText="Réservez Maintenant"
     />
     <ScheduleSecton action="https://formspree.io/f/mrgjlpao" />
     <iframe
