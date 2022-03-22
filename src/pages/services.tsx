@@ -9,10 +9,15 @@ import linesImg from "../assets/images/lines.png"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="Service Physiothérapie Prilly"
+      description="Découvrez nos traitements de physiothérapie : réhabilitation cardiaque, sportive,
+postopératoire, etc. Réservez un rendez-vous en ligne dès maintenant."
+    />
     <div className="relative h-screen">
       <Navigation />
       <img

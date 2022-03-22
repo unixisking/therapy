@@ -4,13 +4,13 @@ import Navigation from "../components/Navigation"
 import HeaderImg from "../assets/images/services/physiotherapie/bg.png"
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const spec = [
   {
@@ -33,7 +33,11 @@ const spec = [
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="TRAITEMENT PHYSIOTHÉRAPIE À PRILLY"
+      description="Bénéficiez de nos techniques les plus avancées en physiothérapie. Votre physiothérapeute
+vous propose un traitement personnalisé. Contactez-nous !"
+    />
     <div className="relative h-screen">
       <Navigation />
       <img

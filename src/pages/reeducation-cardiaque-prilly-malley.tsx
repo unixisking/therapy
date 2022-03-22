@@ -10,6 +10,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const spec = [
   {
@@ -28,7 +29,11 @@ const spec = [
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="Rééducation cardiaque Prilly"
+      description="Affrontez les séquelles de l'insuffisance cardiaque, l'infarctus, etc en suivant nos
+programmes de rééducation cardiaque. Contactez-nous au plus vite !"
+    />
     <div className="relative h-screen">
       <Navigation />
       <img

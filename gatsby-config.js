@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Super Masseur`,
+    title: `Edelweiss Physio`,
     description: ``,
     author: `@try2promote`,
     siteUrl: "https://super-masseur.ch",

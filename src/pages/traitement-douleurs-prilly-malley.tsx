@@ -10,6 +10,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const spec = [
   {
@@ -32,7 +33,11 @@ const spec = [
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="Traitement Douleurs Prilly"
+      description="Venez nous voir pour soulager votre douleur bas du dos, douleur au genou, etc avec nos
+services de traitement de douleurs. Sans plus tarder, prenez RDV."
+    />
     <div className="relative h-screen">
       <Navigation />
       <img

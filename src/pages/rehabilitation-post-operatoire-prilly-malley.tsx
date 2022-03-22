@@ -10,6 +10,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const spec = [
   {
@@ -32,7 +33,11 @@ const spec = [
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="Réhabilitation post opératoire Prilly"
+      description="Vous avez eu recours à une chirurgie ? Nous vous proposons un programme de rééducation
+post opératoire pour accélérer votre guérison. Bienvenue chez nous !"
+    />
     <div className="relative h-screen">
       <Navigation />
       <img

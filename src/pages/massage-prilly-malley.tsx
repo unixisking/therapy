@@ -11,6 +11,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import ScheduleSecton from "../components/ScheduleForm"
 import ServiceSpec from "../components/ServiceSpec"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const spec = [
   {
@@ -41,7 +42,12 @@ const spec = [
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="MASSOTHÉRAPIE - MASSAGE THERAPEUTIQE PRILLY"
+      description="Accordez-vous un moment de pur détente avec nos massages
+thérapeutiques effectués par notre thérapeute qualifié. Visitez notre site
+pour en savoir plus !"
+    />
     <div
       // style={{
       //   background: `url(${HeaderImg}) no-repeat center center / cover`,

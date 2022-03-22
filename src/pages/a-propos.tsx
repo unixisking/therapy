@@ -15,10 +15,15 @@ import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
 import Bio from "../components/Bio"
 import Faq from "../components/Faq"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="Physiothérapie et rééducation Prilly"
+      description="Edelweiss Physio est un cabinet de physiothérapie ayant pour objectif de
+fournir un suivi personnalisé, où les besoins du patient sont prioritaires."
+    />
     <div className="relative h-screen">
       <Navigation />
       <img

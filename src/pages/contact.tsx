@@ -6,10 +6,15 @@ import linesImg from "../assets/images/lines.png"
 
 import Footer from "../components/Footer"
 import ContactSection from "../components/ContactSection"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <div className="relative">
-    {/* <SEO title="Home" /> */}
+    <SEO
+      title="Cabinet physiothérapie Prilly"
+      description="Pour prendre rendez-vous, prière de nous appeler au +41 79 232 20 74 ou nous
+contacter via le formulaire en ligne. Adresse. Chemin du viaduc 12, 1008 Prilly"
+    />
     <div className="relative h-screen">
       <Navigation />
       <img

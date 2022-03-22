@@ -18,7 +18,7 @@ const IndexPage = () => (
   <div className="relative">
     <SEO
       title="VOTRE CABINET DE PHYSIOTHÉRAPIE À PRILLY"
-      description="Besoin d'une physiothérapie ? Faites appel à notre expert, physiothérapeute
+      description="Besoin de physiothérapie ? Faites appel à notre spécialiste, physiothérapeute
       et kinésithérapeute, dès aujourd'hui. Expertise et professionnalisme assurés."
     />
     {/* <SEO title="Home" /> */}
