@@ -3,7 +3,7 @@ module.exports = {
     title: `Edelweiss Physio`,
     description: ``,
     author: `@try2promote`,
-    siteUrl: "https://super-masseur.ch",
+    siteUrl: "https://edelweiss-physio.ch",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
