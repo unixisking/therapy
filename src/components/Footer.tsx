@@ -8,19 +8,19 @@ import { StaticImage } from "gatsby-plugin-image"
 const navigation = {
   solutions: [
     {
-      name: "Acceuil",
-      href: "/services",
+      name: "“Accueil”",
+      href: "/",
     },
     {
-      name: "Services",
-      href: "/services",
+      name: "Soins",
+      href: "/soins",
     },
     {
       name: "A propos",
       href: "/a-propos",
     },
     {
-      name: "Contactez nous",
+      name: "Contactez-nous",
       href: "/contact",
     },
   ],
@@ -123,11 +123,11 @@ export default function Footer() {
               className="w-72 -mt-12 -ml-6 h-auto"
             />
             <p className="text-grey text-base">
-              Notre but est de contribuer au bien-être de nos patients.
-              Rapidité, efficacité et prix abordable sont les maîtres-mots.
-              Notre physiothérapeute conçoit un plan sur-mesure en exploitant
-              les dernières techniques et approches afin d'améliorer les
-              performances des patients.
+              Notre cabinet de physiothérapie à Prilly contribue au bien-être de
+              nos patients. Rapidité, efficacité et prix abordable sont les
+              maîtres mots. Nos physiothérapeutes conçoivent des plans
+              personnalisés en utilisant les dernières techniques et approches
+              pour améliorer les performances des patients.
             </p>
             {/* <div className="flex space-x-6">
               {navigation.social.map(item => (

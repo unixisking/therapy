@@ -119,7 +119,7 @@ function classNames(...classes: string[]) {
 
 export default function Navigation() {
   // fixed z-20  w-screen bg-white drop-shadow-sm py-2
-  const homeFormUrls = ["/a-propos", "/services", "/contact"]
+  const homeFormUrls = ["/a-propos", "/soins", "/contact"]
   const url = typeof window !== "undefined" ? window.location.pathname : null
 
   return (
@@ -155,9 +155,9 @@ export default function Navigation() {
               to="/"
               className="text-base text-white hover:font-medium"
             >
-              Acceuil
+              Accueil
             </GatsbyLink>
-            <FlyoutMenu title="Services" links={solutions} />
+            <FlyoutMenu title="Soins" links={solutions} />
 
             <GatsbyLink
               to="/a-propos"
@@ -226,14 +226,14 @@ export default function Navigation() {
                   to="/"
                   className="text-base text-grey hover:font-medium"
                 >
-                  Acceuil
+                  Accueil
                 </GatsbyLink>
 
                 <GatsbyLink
-                  to="/services"
+                  to="/soins"
                   className="text-base text-grey hover:font-medium"
                 >
-                  Services
+                  Soins
                 </GatsbyLink>
                 <div className="flex flex-col ml-2">
                   {solutions.map(x => (
@@ -335,7 +335,7 @@ const FlyoutMenu = ({ title, links }) => {
                 <div className="bg-gray-50 hover:bg-gray-100 space-y-6 sm:flex sm:space-y-0 sm:space-x-10">
                   <div className="py-3 w-full">
                     <GatsbyLink
-                      to="/services"
+                      to="/soins"
                       className="ml-3 p-4 flex items-center rounded-md text-base text-gray-900"
                     >
                       <span className="ml-3">Consultez tous nos services</span>

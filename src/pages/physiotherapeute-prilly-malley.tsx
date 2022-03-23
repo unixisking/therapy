@@ -49,12 +49,12 @@ vous propose un traitement personnalisé. Contactez-nous !"
       />
       <div className="absolute top-0 w-96 sm:w-auto mt-48 left-1/2 transform -translate-x-1/2 z-10 text-white text-center">
         <h1 className="text-4xl 2xl:text-6xl font-bold text-primary md:text-white">
-          Physiotherapie Prilly-MALLEY
+          Physiothérapeute Prilly-MALLEY
         </h1>
         <p className="text-base text-grey md:text-white mt-4">
-          Edelweiss Physio vous propose des traitement de physiotherapie.
-          Découvrez comment nos physiothérapeutes peuvent vous aider à retrouver
-          une meilleure forme physique.
+          Edelweiss Physio vous propose des traitements de physiothérapie.
+          Découvrez comment nos physiothérapeutes Prilly peuvent vous aider à
+          retrouver une meilleure forme physique.
         </p>
         <Link
           to="#reservez"
@@ -73,9 +73,15 @@ vous propose un traitement personnalisé. Contactez-nous !"
       isImageRight
       title="Notre approche de la physiothérapie"
       description="
-      Nos physiothérapeutes mettent leurs compétences et leur savoir-faire à votre disposition pour non seulement accélérer la guérison de vos blessures et éliminer vos douleurs, mais aussi pour empêcher la survenue de problèmes physiques plus graves.<br/>
-Nos physiothérapeutes arrivent à identifier les parties corporelles affectées et à concevoir des traitements appropriés.
-Ainsi, nos patients peuvent renforcer leurs articulations et muscles, développer leur équilibre, et soulager leurs douleurs.
+      Nos physiothérapeutes Prilly mettent leurs compétences et leur savoir-faire à votre
+disposition pour non seulement accélérer la guérison de vos blessures et éliminer
+vos douleurs, mais aussi pour empêcher la survenue de problèmes physiques plus
+graves.<br/><br/>
+Dans notre cabinet de physiothérapie à Prilly, nous parvenons à identifier les parties
+corporelles affectées et à concevoir des traitements appropriés. Ainsi, nos patients
+peuvent renforcer leurs articulations et muscles, développer leur équilibre, et
+soulager leurs douleurs.
+
       "
       image={
         <StaticImage
@@ -89,14 +95,20 @@ Ainsi, nos patients peuvent renforcer leurs articulations et muscles, développe
     />
     <ServiceSpec
       title="Techniques de physiothérapie"
-      description="Nos physiothérapeutes maîtrisent plusieurs techniques de physiothérapie, parmi lesquelles on peut citer :"
+      description="Nos physiothérapeutes Prilly maîtrisent plusieurs techniques de physiothérapie, parmi lesquelles on peut citer :"
       data={spec}
     />
     <Section
       isImageRight
       headline="À qui est destinée la physiothérapie ?"
       description="
-      La physiothérapie est destinée aux personnes souffrant de douleurs les empêchant d'accomplir leurs activités journalières habituelles. Elle s'adresse également aux personnes voulant simplement améliorer leurs capacités physiques et prévenir les blessures. Nous vous proposons différents programmes de renforcement musculaire. Si vous souhaitez demander une consultation avec l'un de nos experts, il se fera un plaisir de vous proposer la meilleure thérapie pour vous.
+      Au sein du cabinet Edelweiss Physio à Prilly, nos soins sont destinés aux personnes
+souffrant de douleurs qui les empêchent d'accomplir leurs activités quotidiennes
+habituelles. Ils sont également destinés aux personnes qui souhaitent simplement
+améliorer leurs capacités physiques et prévenir les blessures. Nos programmes de
+renforcement musculaire proposés aux patients sont variés. Demandez une
+consultation avec l'un de nos experts, qui se fera un plaisir de vous proposer la
+meilleure thérapie pour vous.
       "
       image={
         <StaticImage

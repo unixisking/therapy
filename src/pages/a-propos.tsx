@@ -2,14 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import Navigation from "../components/Navigation"
 
-import WhyUs from "../components/WhyUs"
-import Button from "../components/Button"
-// import Layout from "../components/layout"
-
 import HeaderImg from "../assets/images/homepage-header-img.png"
 import linesImg from "../assets/images/lines.png"
 
-import SecondaryCta from "../components/SecondaryCta"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 import { StaticImage } from "gatsby-plugin-image"
@@ -38,11 +33,12 @@ fournir un suivi personnalisé, où les besoins du patient sont prioritaires."
           A Propos
         </h1>
         <p className="text-base text-grey md:text-white mt-4">
-          Edelweiss Physio a été créé pour offrir aux patients les meilleurs
-          traitements de physiothérapie qui soient. Nous ne cessons d'innover et
-          de perfectionner notre approche thérapeutique afin de garantir à nos
-          patients une prise en charge optimale. Découvrez ici notre cabinet de
-          physiothérapie, le responsable, notre mission et bien plus encore.
+          Edelweiss Physio offre à ses patients les traitements les plus
+          récents. Notre équipe ne cesse d'innover et de perfectionner son
+          approche thérapeutique afin de garantir à ses patients une prise en
+          charge optimale. Retrouvez ici plus d'informations à propos de notre
+          cabinet de physiothérapie, du directeur, de notre mission et bien plus
+          encore.
         </p>
         <Link
           to="/#reservez"
