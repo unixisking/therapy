@@ -101,7 +101,7 @@ const navigation = {
 
 const Link = withHoverEffect(GatsbyLink)
 
-export default function Footer() {
+export default function Footer({ description }: { description?: string }) {
   return (
     <footer
       className="relative z-50 bg-white shadow-2xl lg:pt-16"
@@ -122,13 +122,11 @@ export default function Footer() {
               placeholder="blurred"
               className="w-72 -mt-12 -ml-6 h-auto"
             />
-            <p className="text-grey text-base">
-              Notre cabinet de physiothérapie à Prilly contribue au bien-être de
-              nos patients. Rapidité, efficacité et prix abordable sont les
-              maîtres mots. Nos physiothérapeutes conçoivent des plans
-              personnalisés en utilisant les dernières techniques et approches
-              pour améliorer les performances des patients.
-            </p>
+            <br />
+            {description
+              ? description
+              : "Notre cabinet de physiothérapie à Prilly contribue au bien-être de nos patients. Rapidité, efficacité et prix abordable sont les maîtres mots. Nos physiothérapeutes conçoivent des plans personnalisés en utilisant les dernières techniques et approches pour améliorer les performances des patients."}
+            <p className="text-grey text-base"></p>
             {/* <div className="flex space-x-6">
               {navigation.social.map(item => (
                 <a
