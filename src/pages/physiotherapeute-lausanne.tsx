@@ -34,7 +34,7 @@ const spec = [
 const IndexPage = () => (
   <div className="relative">
     <SEO
-      title="TRAITEMENT PHYSIOTHÉRAPIE À PRILLY"
+      title="TRAITEMENT PHYSIOTHÉRAPIE À Lausanne"
       description="Bénéficiez de nos techniques les plus avancées en physiothérapie. Votre physiothérapeute
 vous propose un traitement personnalisé. Contactez-nous !"
     />
