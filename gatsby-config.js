@@ -97,6 +97,13 @@ module.exports = {
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
     },
+    {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: `https://content.edelweiss-physio.ch`,
+        contentApiKey: `0e6d7470beaf14e25c839c3714`,
+      },
+    },
     "gatsby-plugin-svgr",
     `gatsby-plugin-styled-components`,
   ],

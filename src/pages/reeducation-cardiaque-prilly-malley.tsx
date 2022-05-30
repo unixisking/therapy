@@ -1,5 +1,5 @@
 import React from "react"
-import Navigation from "../components/Navigation"
+import { Navigation } from "../components/Navigation"
 
 import HeaderImg from "../assets/images/services/reeducation-cardiaque/bg.png"
 import linesImg from "../assets/images/lines.png"

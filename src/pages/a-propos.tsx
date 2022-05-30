@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Navigation from "../components/Navigation"
 
 import HeaderImg from "../assets/images/homepage-header-img.png"
 import linesImg from "../assets/images/lines.png"
@@ -11,6 +10,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Bio from "../components/Bio"
 import Faq from "../components/Faq"
 import SEO from "../components/seo"
+import { Navigation } from "../components/Navigation"
 
 const IndexPage = () => (
   <div className="relative">

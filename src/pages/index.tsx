@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Navigation from "../components/Navigation"
+import { Navigation } from "../components/Navigation"
 
 import WhyUs from "../components/WhyUs"
 import Button from "../components/Button"
