@@ -85,7 +85,7 @@ contacter via le formulaire en ligne. Adresse. Chemin du viaduc 12, 1008 Prilly"
             >
               Articles récents
             </a>
-            <div className="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div className="max-w-lg mx-auto grid lg:gap-24 lg:grid-cols-3 lg:max-w-none">
               {posts.map(({ node: post }) => (
                 <BlogCard
                   title={post.title}
@@ -108,7 +108,7 @@ contacter via le formulaire en ligne. Adresse. Chemin du viaduc 12, 1008 Prilly"
             >
               Articles récents
             </a>
-            <div className="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+            <div className="max-w-lg mx-auto grid lg:gap-24 space-x-12 lg:grid-cols-3 lg:max-w-none">
               {posts.map(({ node: post }) => (
                 <BlogCard
                   title={post.title}
